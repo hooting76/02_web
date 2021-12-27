@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title> 텍스트 관련 요소의 사용 </title>
+	<meta charset="UTF-8" />
+	<style>
+		address{
+			font-style: normal;
+		}
+		.b{
+			font-weight: bold;
+		}
+		.i{
+			font-style: italic;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 텍스트에 관련된 표준 요소를 사용합니다. -->
+	<h1> 텍스트 관련 요소의 사용</h1>
+	<h2>abbr </h2><!--약어 라는 뜻(에버레이션) = <abbr title="원문">-->
+	<p>독일 고급 와인의 범주로 <abbr title="Qualitatswein bestimeter Anbaugebiete">QbA</abbr>가 있고 특정한 지역에서 생산되는 특별 품질 표기가 된 QmP가 있다. </p>
+	<h2>address</h2><!--주소테그-->
+	<address><!--기본적으로 글씨가 기울어짐-->
+		Address: Dong Soong Dong, Jong Ro Gu, Seoul<br />
+		Phone: 02-3673-0113
+	</address>
+	<h2>strong, sub, sup, em, b, i</h2><!--strong은 글자를 강조 / b테그는 글씨를 굵게 / b테그는 안쓰임 -->
+	<!--em 은 강조기울기-->
+	<p>캘리포니아 <strong style="background: yellow;">포도원</strong>은 크게 <span class="b">3개 지역</span>으로 나파 밸리 Napa Valley와 소노마 카운티 Sonoma 지역,   <em>중부 내륙</em>의 산죠퀸 밸리San Joaquin Valley, 
+		그리고 남부 <span class="i">해안지역</span>의 <sub>몬트래이 카운티</sub> <sup>Monterey County</sup>와 산타 클라라 Santa Clara 가 있다. </p>
+
+	<h2>blockquote</h2><!--인용문-->
+	<p>마틴 루터 킹은 이렇게 말했다.</p><!--q테그는 따음표-->
+	<blockquote cite="http://www.naver.com">비폭력이란 강력하고 정당한 무기로서 상처없이 잘라내며 <q>그것을 휘두르는 사람을 고상하게 만들어 준다.</q> 비폭력은 치료의 검이다.</blockquote>
+	<h2>추가글과 삭제글</h2>
+	<p>오늘은 <del>첫수업</del></p><!--글자미들바-->
+	<p>우히히히히<ins>에헤헤헤헤</ins></p><!--글자언더바-->
+</body>
+</html>

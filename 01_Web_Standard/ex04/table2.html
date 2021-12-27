@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 활용예시1</title>
+    <style>
+    table{margin: 50px auto; text-align: center;border: 3px solid #000; width: 500px; height: 300px; border-collapse: collapse;}
+    td, th{border: 1px solid #000}
+    thead{background: green;}
+    tfoot{background: rgb(143, 146, 143);}
+    tbody tr:nth-child(1) td{background: chartreuse;}
+    tbody tr:nth-child(2) td{background: chartreuse;}
+    tbody tr:nth-child(4) td{background: lightgray;}
+    tbody tr:nth-child(6) td{background: lightgray;}
+    </style>
+</head>
+<!-- rowspan은 세로셀 병합 / colspan은 가로셀 병합 -->
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td colspan="3">placeholder</td>    
+            </tr>
+        </thead>
+        <tr>
+            <td rowspan="2">placeholder</td>
+            <td colspan="2">placeholder</td>
+        </tr>
+        <tr>
+            <td>placeholder</td>
+            <td>placeholder</td>
+        </tr>
+        <tr>
+            <td>asdf</td>
+            <td>asdf</td>
+            <td>asdf</td>
+        </tr>
+        <tr>
+            <td>asdf</td>
+            <td>asdf</td>
+            <td>asdf</td>
+        </tr>
+        <tr>
+            <td>asdf</td>
+            <td>asdf</td>
+            <td>asdf</td>
+        </tr>
+        <tr>
+            <td>asdf</td>
+            <td>asdf</td>
+            <td>asdf</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td>total</td>
+                <td colspan="2">asdf</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+<!-- 12/23 -->

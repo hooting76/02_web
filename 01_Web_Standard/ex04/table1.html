@@ -5,10 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table{
+            text-align: center;
+            margin:100px auto auto ;
+            border: 1px solid black;
+
+        }
+        caption{
+			border-top: 1px solid black;
+            border-right: 1px solid black;
+			border-left: 1px solid black;
+			background: green;
+		}
+        thead{
+            background: lightgreen;
+        }
+        tfoot{background: grey;}
+        /* tr:nth-child(1){
+            background: gray;
+        }
+        tr:nth-child(3){
+            background: gray;
+        } */
+        
+    </style>
 </head>
 <body>
     <table>
-        
+        <caption rowspan="3">CAPTION</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">TH</th>
+                <th colspan="2">TH</th>
+            </tr>
+             <tr>
+                 <th>TH</th>
+                 <th>TH</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>td</td>
+                <td>td</td>
+                <td>td</td>
+            </tr>
+            <tr>
+                <td>td</td>
+                <td>td</td>
+                <td>td</td>
+            </tr>
+            <tr>
+                <td>td</td>
+                <td>td</td>
+                <td>td</td>
+            </tr>
+            <tr>
+                <td>td</td>
+                <td>td</td>
+                <td>td</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>total</td>
+            <td colspan="2">TH</td>
+        </tfoot>
     </table>
 </body>
 </html>

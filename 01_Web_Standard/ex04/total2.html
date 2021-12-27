@@ -3,9 +3,50 @@
 <head>
 	<title> 회원 로그인 </title>
 	<meta charset="UTF-8" />
+	<style>
+		.login_area{
+			border: lightgray 1px solid;
+			border-radius: 5px;
+			width: 350px;
+			height: auto;
+		}
+		#loginBtn{
+			background: slategray;
+			font-weight: bold;
+			color: white;
+			font-size: 20px;
+			border-radius: 5px;
+			width: 100px;
+		}
+	</style>
 </head>
 
 <body>
-	
+	<img src="./images/title_memberlogin.gif" alt="맴버 로그인">
+	<div class="login_area">
+		<form action="#" method="post" name="userForm">
+			<br>
+			<input type="text" id="userId" name="userId" placeholder="아이디">
+			<select name="userSelect" id="userSelect" type="text">
+				<option>-- Select --</option>
+				<option>-- Select1 --</option>
+				<option>-- Select2 --</option>
+				<option>-- Select3 --</option>
+			</select>
+			<br>
+			<input type="password" id="userPw" name="userPw">
+			<input type="button" id="loginBtn" name="loginBtn" value="LOGIN">
+			<br>
+			<br>
+			<label>
+				<input name="userOption1" type="checkbox" value="아이디저장"/>
+				아이디저장
+			</label>
+			<br>
+			<br>
+		</form>
+	</div>
 </body>
 </html>
+<!-- 21/12/27 -->
+<!-- input예제1(select(option), label) -->

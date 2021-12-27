@@ -21,11 +21,22 @@
 			<input name="userTitle" type="text" />
 		</p>
 		<p>예약하실 객실을 선택하세요.
-
+			<!-- name이 같은경우 단일선택만 가능 / 다른 name을 가졌을경우는 중복선택가능-->
+			<!-- 웹 접근성을 높혀서 택스트를 눌러도 체크됌. -->
+			<input type="radio" id="single" name="userRoom" checked>
+			<label for="single">single</label>
+			<input type="radio" id="double" name="userRoom">
+			<label for="double">double</label>
 		</p>
 		<p>기타 패키지 옵션을 선택하세요<br />
-
+			<!-- 다중선택 가능한 radio -->
+			<input type="checkbox" value="조식" id="breakefast" checked>
+			<label for="breakefast">조식</label>
+			<input type="checkbox" value="픽업서비스" id="pickUp">
+			<label for="pickUp">픽업서비스</label>
 		</p>
 	</form>
 </body>
 </html>
+<!-- 21/12/27 -->
+<!-- checkbox radio+label(웹 접근성) -->

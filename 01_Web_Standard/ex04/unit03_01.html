@@ -8,6 +8,66 @@
 <body>
 	<h1>예약 문의</h1>
 	<!-- 내용을 입력합니다. -->
-	
+	<!-- 사용자가 웹사이트로 정보를 보낼수 있는 요소는 form-->
+	<!-- method는 서버 쪽 프로그램에게 어떻게 넘겨줄지에 대한 것 -->
+	<!-- required은 필수입력이 필요할때 첨가 -->
+	<!-- placeholder는 입력할 자리에 입력전에 띄워질 문구 -->
+	<!-- autofocus는 창을 열었을경우 자동으로 입력대기해주는 속성 -->
+	<form action="#" method="post" name="form1">
+		<p>작성자<input type="text" placeholder="작성자를 입력해 주세요." 
+			name="userName" required autofocus>
+		</p>
+		<p>
+			비밀번호
+			<input type="password" placeholder="비밀번호" name="userPw" required>
+		</p>
+		<p>
+			전화번호
+			<input type="tel" name="userPhone" >
+		</p>
+		<p>
+			날짜
+			<input type="date" name="userDate">
+		</p>
+		<p>
+			인원
+			<input type="number" name="userNember" value="1">
+		</p>
+		<p>
+			color
+			<input type="color" name="userColor">
+		</p>
+		<p>
+			URL
+			<input type="url" name="userUrl">
+		</p>
+		<p>
+			range
+			<input type="range">
+		</p>
+		<p>
+			파일을 선택해주세요.
+			<input type="file" name="userFile">
+		</p>
+		<p>
+			제목
+			<input type="text" name="userTitle">
+		</p>
+		<p>
+			disabled속성과 readonly속성
+			<ul>
+				<li><label for="serialNum">시리얼 번호 입력:</label>
+				<input type="text" id="serialNum"> <input type="button" value="이전">
+				<input type="button" value="다음" disabled>
+				</li>
+				<li>
+					<label for="book">선택한 책</label><input type="text" id="book" value="반응형 웹" readonly>
+					<label for="number">수량:</label><input type="number" id="number" value="1">	
+				</li>
+			</ul>
+		</p>
+	</form>
 </body>
 </html>
+<!-- 21/12/27 -->
+<!-- disable속성(btn), readonly속성(text) -->

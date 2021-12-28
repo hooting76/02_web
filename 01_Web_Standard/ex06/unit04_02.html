@@ -4,14 +4,20 @@
 		<title>속성 선택자 사용하기</title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
-		/* a 요소를 이용하여 선택자를 정의합니다. */
-			
+		/* a 요소를 이용하여 속성 선택자를 정의합니다. */
+			a[title="복어조리기능사"]{background: pink;}
+			/* ^=는 ""속에 시작하는 단어가 들어가는걸 지정해주는 선택자 */
+			a[title^="제과"]{background: yellow;}
+			/* $=는 ""속에 있는 단어가 끝으로 있는걸 지정해주는 선택자 */
+			a[title$="기능사"]{background: turquoise;}
+			/* *=은 ""안에 들어가는 단어 전부를 찾는 선택자 */
+			a[title*="산업기사"]{background: wheat;}
 		</style>
 	</head>
 
 	<body>
 		<h1>속성  선택자 사용하기</h1>
-		<hr />
+		<hr>
 		<h2>조리학부 자격증</h2> 
 		<ul>
 			<li><a href="http://www.q-net.or.kr" title="복어조리기능사">복어조리기능사</a></li>
@@ -20,7 +26,7 @@
 			<li><a href="http://www.q-net.or.kr" title="제과기능장">제과기능장</a></li>
 			<li><a href="http://www.q-net.or.kr" title="제과기능사">제과기능사</a></li>
 			<li><a href="http://www.q-net.or.kr" title="제빵기능사">제빵기능사</a></li>
-			<li><a href="http://www.q-net.or.kr" title="조리기능장">조리기능장</a></li>
+			<li><a href="http://www.q-net.or.kr" title="조리산업기사">조리산업기사</a></li>
 			<li><a href="http://www.q-net.or.kr" title="조리산업기사(복어조리)">조리산업기사(복어조리)</a></li> 
 			<li><a href="http://www.q-net.or.kr" title="조리산업기사(양식)">조리산업기사(양식)</a></li> 
 			<li><a href="http://www.q-net.or.kr" title="조리산업기사(일식)">조리산업기사(일식)</a></li> 
@@ -32,3 +38,5 @@
 		</ul>
 	</body>
 </html>
+<!-- 21/12/28 -->
+<!-- a[title^=""]{}   /  a[title$=""]{}   /   a[title*=""]{}-->

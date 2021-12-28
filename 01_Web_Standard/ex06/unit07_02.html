@@ -9,9 +9,15 @@
 			line-height:150%;
 			font-size:12px;
 			}
-		/* 첫 번째 글자  */
-		
+		/* 첫 번째 글자 */
+		/* ::는 일부만 선택 :는해당 전체 */
+		/* 해당 가상 선택자는 머릿말에 활용 가능 */
+		/* 1em = 16px */
+		p::first-letter{font-size: 3em;}
 		/* 첫 번째 줄  */
+		p::first-line{color: cyan;}
+		/* 글자를 그래그하여 나타나는 변화 */
+		p::selection{background: red; color: white;}
 			
 		</style>
 	</head>
@@ -26,3 +32,5 @@
 		</p>
 	</body>
 </html>
+<!-- 21/12/28 -->
+<!-- 웹의 기본은 16px로 된다. -->

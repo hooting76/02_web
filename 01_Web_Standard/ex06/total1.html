@@ -6,14 +6,37 @@
 	<style type="text/css">
 	
 			/* 전체 선택자 */
-
+			*{margin: 0; padding: 0;}
+			
 			/* body 선택자 */
-	
+			body{margin: 10px auto 10px 10px;}
+
 			/* 하이퍼링크 디자인 */
+			a:visited{color: lightgray; text-decoration: none;}
+			a:hover{background: white; color:black; text-decoration: none;}
+			a:active{background: white; color:black; text-decoration: none;}
+			a:link{color: lightgray; text-decoration: none;}
 
 			/* div 요소 디자인  */
+			#categoryBox{
+				border: 5px solid lightskyblue;
+				width: 200px;
+				margin: 30px auto 10px 15px;
+			}
 
+			#bbsBox{
+				border: 5px solid pink;
+				width: 200px;
+				margin: 30px auto 10px 15px;
+			}
 			/* h1 요소 디자인 */
+			#categoryBox>h1{
+				border-bottom: lightgray 2px solid;
+				padding-left: 10px;
+			}
+			#bbsBox>h1{
+				padding-left: 10px;
+			}
 			
 	</style>
 </head>
@@ -42,3 +65,4 @@
 	</div>
 </body>
 </html>
+<!-- 21/12/28 -->

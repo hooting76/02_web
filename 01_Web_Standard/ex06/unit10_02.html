@@ -4,7 +4,13 @@
 		<title>선택자간의 우선 순위 알아보기</title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
-		
+			/* 밑에 있는 선택자를 우선으로 한다. */
+			/* 다만, id tag class가 같이 있다면 id가 가장 우선순위이다. */
+			body{color: red;}
+			#bgPage1{color: salmon;}
+			.bgPage2{color:slateblue}
+			span{color: brown !important;}
+			.blueText{color: chartreuse;}
 			</style>
 	</head>
 
@@ -19,3 +25,6 @@
 		</div>
 	</body>
 </html>
+<!-- 21/12/28 -->
+<!-- 선택자 우선순위 id> class > tag -->
+<!-- 예외적으로 !important을 추가하면 어디에 있던 그 요소가 제일중요 취급. -->

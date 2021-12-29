@@ -4,7 +4,29 @@
 		<title>목록 문단에 이미지, 위치, 스타일 제어하기</title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
-					
+			/* 리스트스타일의 변경 */
+			/* list-style-position의 경우는 outside가 기본값. */
+			/* list-style은 보통 none을 자주 씀. */
+			#list1 li{
+				list-style-image: url(./images/arrow.gif);
+				list-style-position: inside;
+				list-style: disc;
+				list-style: circle;
+				list-style: square;
+				list-style: none;
+			}
+
+			/* 여러 순서 표기법 */
+			#list2 li{
+				list-style: upper-alpha;
+				list-style: lower-alpha;
+				list-style: upper-roman;
+				list-style: lower-roman;
+				list-style: upper-latin;
+				list-style: hiragana;
+				list-style: decimal-leading-zero;
+				list-style: decimal;
+			}
 		</style>
 	</head>
 
@@ -30,3 +52,4 @@
 		</ol>
 	</body>
 </html>
+<!-- 21/12/29 -->

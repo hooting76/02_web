@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border예제</title>
+    <style>
+        table{
+            width: 800px;
+            margin: 50px auto;
+            border: 1px solid #555;
+            height: 500px;
+            text-align: center;
+        }
+        table div{
+            padding: 20px;
+        }
+        .tbox1{border: 3px none #ddd;}
+        .tbox2{border: 3px solid #ddd;}
+        .tbox3{border: 3px dotted #ddd;}
+        .tbox4{border: 3px dashed #ddd;}
+        .tbox5{border: 3px double #ddd;}
+        .tbox6{border: 3px groove #ddd;}
+        .tbox7{border: 3px ridge #ddd;}
+        .tbox8{border: 3px inset #ddd;}
+        .tbox9{border: 3px outset #ddd;}
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <div class="tbox1">none</div>
+            </td>
+            <td>
+                <div class="tbox2">solid</div>
+            </td>            
+            <td>
+                <div class="tbox3">dotted</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="tbox4">dashed</div>
+            </td>
+            <td>
+                <div class="tbox5">double</div>
+            </td>            
+            <td>
+                <div class="tbox6">groove</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="tbox7">ridge</div>
+            </td>
+            <td>
+                <div class="tbox8">inset</div>
+            </td>            
+            <td>
+                <div class="tbox9">outset</div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+<!-- 21/12/29 -->
+<!-- border-line 종류를 나타냄. -->

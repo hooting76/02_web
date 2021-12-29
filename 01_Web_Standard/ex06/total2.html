@@ -4,8 +4,74 @@
 	<title> 히트 레시피 </title>
 	<meta charset="UTF-8" />
 	<style type="text/css">
-	
+		/* 전체적용 css*/
+		*{list-style: none;}
 
+		/* 상단 적용 */
+		#categoryBox{
+			border: 5px solid teal;
+			width: 150px;
+			margin-bottom: 50px;
+		}
+
+		.cookMenu{
+			margin-top: 2px;
+			padding-left: 10px;
+		}
+		#categoryBox>h1{
+			padding-left: 10px;
+			border-bottom: 1px solid gray ;
+			margin-bottom: 2px;
+			margin-top: 2px;
+		}
+
+		/* category 단어가 들어간 img파일의 이미지 크기 키우기 */
+		img[src*="category"]{width: 50px; height: 13px;}
+
+		.cookMenu>li>a:visited{color: lightgray; text-decoration: none;}
+		.cookMenu>li>a:hover{background: white; color:black; text-decoration: none;}
+		.cookMenu>li>a:active{background: white; color:black; text-decoration: none;}
+		.cookMenu>li>a:link{color: lightgray; text-decoration: none;}
+		.cookMenu>li{margin-bottom: 2px;}
+
+		.cookMenu>li:first-child>a{
+			color: black;
+			font-weight: bold;
+		}
+
+		/* 하단 적용 */
+		#bbsBox{
+			border: 5px solid pink;
+			width: 150px;
+		}
+
+		.bbsMenu{
+			margin-top: 2px;
+			padding-left: 10px;
+		}
+
+		#bbsBox>h1{
+			padding-left: 10px;
+			margin-top: 2px;
+			margin-bottom: 2px;
+		}
+
+		.bbsMenu>li:first-child>a{
+			background-color: red;
+			color: white;
+		}
+		.bbsMenu>li:nth-child(2)>a{
+			background-color: blue;
+			color: white;
+		}
+		.bbsMenu>li:nth-child(3)>a{
+			background-color: green;
+			color: white;
+		}
+		.bbsMenu>li:last-child>a{
+			background-color: green;
+			color: white;
+		}
 	</style>
 </head>
 
@@ -33,3 +99,4 @@
 	</div>
 </body>
 </html>
+<!-- 21/12/29 -->

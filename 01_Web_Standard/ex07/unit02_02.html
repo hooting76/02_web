@@ -4,7 +4,23 @@
 		<title>인용부호, 특정 문자열과 같은 콘텐츠 생성하기</title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
-			
+			/* open-quote는 따옴표 시작 / close-quote는 따옴표 닫기  * 이때 ""금지*/
+			h1::before{content: open-quote;}
+			h1::after{content: close-quote;}
+
+			/* 순번 자동생성 */
+			p{counter-increment: myIndex; white-space:  pre;}
+			p::before{
+				content: counter(myIndex, upper-roman);
+				font-size: 3em;
+				color: red;
+			}
+
+			/* 따옴표 넣기 */
+			q{
+				quotes: '<<''>>''['']';
+			}
+
 		</style>
 	</head>
 
@@ -30,6 +46,37 @@
 			<q class="qStyle"> 미래는 현재 우리가 무엇을 하는가에 달려 있다.  
 						<q> 마하트마 간디 </q> </q> 
 		</p>
+		<hr>
+		<p>
+			<q>
+						The future depends on what we do in the present. 
+						<q> Mahatma Gandhi </q>  
+			</q> 
+
+			<q class="qStyle"> 미래는 현재 우리가 무엇을 하는가에 달려 있다.  
+						<q> 마하트마 간디 </q> </q> 
+		</p>
+		<hr>
+		<p>
+			<q>
+						The future depends on what we do in the present. 
+						<q> Mahatma Gandhi </q>  
+			</q> 
+
+			<q class="qStyle"> 미래는 현재 우리가 무엇을 하는가에 달려 있다.  
+						<q> 마하트마 간디 </q> </q> 
+		</p>
+		<hr>
+		<p>
+			<q>
+						The future depends on what we do in the present. 
+						<q> Mahatma Gandhi </q>  
+			</q> 
+
+			<q class="qStyle"> 미래는 현재 우리가 무엇을 하는가에 달려 있다.  
+						<q> 마하트마 간디 </q> </q> 
+		</p>
 
 	</body>
 </html>
+<!-- 21/12/29 -->

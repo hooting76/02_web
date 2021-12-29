@@ -4,7 +4,15 @@
 		<title> 글 문단의 흐름 방향, 공백 처리에 관련된 속성 알아보기 </title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
-			
+			/* direction은 기본적으로 left to right 가 기본값이다.  */
+			h1{direction:rtl}
+			/* white-space: pre는 html의 내용 있는 그대로를 보여준다. */
+			/* pre의 경우는 html테그에서도 쓸수 있다.  <-- 본문에 예시있음. */
+			/* white-space: nowrap은 줄바꿈 하지않고 양옆을 줄이면 하단에 스크롤바가 생긴다. */
+			/* text-overflow: ellipsis의 경우는 넘치는 텍스트를 ...으로 처리한다.  */
+			/* overflow: hidden은 넘치는 글자를 숨긴다.*/
+			.nowrapP{white-space: nowrap; width: 500px; background: yellow; overflow: hidden; text-overflow: ellipsis;}
+			.preP{white-space: pre;}
 		</style>
 	</head>
 
@@ -20,5 +28,12 @@
 
 			-----(시어도어 루스벨트) 
 		</p>
+		<pre>
+			나보기가 역겨워
+			가실때에는 
+
+			말없이 고이 보내드리오리다.
+		</pre>
 	</body>
 </html>
+<!-- 21/12/29 -->

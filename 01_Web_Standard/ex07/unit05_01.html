@@ -4,7 +4,34 @@
 		<title>이미지, 색상, 글자 투명도 조정하기</title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
-			
+			body{
+				background: url(./images/bg_gray.png) no-repeat #ccc;
+			}
+			div{
+				background: url(./images/bg4.png) no-repeat;
+				width: 530px;
+				height: 424px;
+				margin: 0 auto;
+				/* opacity 0은 아예 안보이는것 */
+				opacity: .8;
+				padding-top: 150px;
+				padding-left: 20px;
+			}
+			.textBox{
+				/* 색상 채도 밝기 투명도 순으로 읽는다.*/
+				background: hsla(60, 100%, 70%, .5);
+				width: 50%;
+				height: auto;
+				margin: 0 auto;
+				padding-top: 150px;
+				padding-left: 20px;
+			}
+			.people{
+				/* 글씨를 크게 키워줌 */
+				font: 3em "Arial Black";
+				/* 투명화방법 */
+				color: rgba(255, 255, 255, .5);
+			}
 		</style>
 	</head>
 
@@ -18,3 +45,6 @@
 		</div>
 	</body>
 </html>
+<!-- 21/12/30 -->
+<!-- 투명도 적용관련한 2가지 방법 -->
+<!-- opacity 방법(그 하위자손까지 투명화)과 hsla알파값의 조절(지정한 단일속성만 투명화) + rgba에서 a값 조절 -->

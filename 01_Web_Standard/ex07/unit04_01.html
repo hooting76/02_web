@@ -4,29 +4,65 @@
 		<title>요소의 배경 처리하기</title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
-				
+			/* background-repeat은 배경이미지의 반복여부 결정 */
+			html{
+				height: 100%;
+			}
+			*{margin: 0; padding: 0;}
+			body{
+				background: lightslategray;
+				color: #fff;
+				background-image: url(./images/bg0.png);
+				background-repeat: no-repeat;
+				/* repeat -y 혹은 -x 가능 */
+
+				background-position: 100% 0%;
+				/* %로 쓰는걸 권장함 */
+
+				background-attachment: fixed;
+				/* 이미지를 브라우저 내에 고정(스크롤상관없이) */
+				/* height: 100%; */
+			}
+			/* background 에 반복여부 및 url 삽입가능 */
+			body>div{
+				background: url(./images/bg1.png) repeat-y 0 0 fixed;
+				height: 100vh;
+				/* vh는 버티컬 하이 라는 뜻으로 수직적인 높이를 나타냄(화면에서의). */
+			}
+			.box{
+				width: 100%;
+				margin: 0 auto;
+			}
+			.box p{
+				line-height: 160%;
+				padding: 10px;
+				background: lightsalmon url(./images/dot.png) repeat-x 0 100%; 
+			}
 		</style>
 	</head>
 
 	<body>
 		<div>
-			<p>Well done is better than well said.</p>
-			<p>Seeing much, suffering much, and studying much, are the three pillars of learning. </p>
-			<p>Education is a progressive discovery of our own ignorance. </p>
-			<p>I want to know God's thoughts; the rest are details.</p>
-			<p>When all think alike, no one thinks very much.</p>
-			<p>Science is a wonderful thing if one does not have to earn one's living at it. </p>
-			<p>It's not that I'm so smart , it's just that I stay with problems longer.</p>
-			<p>Theories should be as simple as possible, but not simpler. </p>
-			<p>Technological progress is like an axe in the hands of a pathological criminal.</p>
-			<p>I never came upon any of my discoveries through the process of rational thinking. </p>
-			<p>Try not to become a man of success but rather to become a man of value. </p>
-			<p>Gravitation cannot be held responsible for people falling in love.</p>
-			<p>What is written without effort is in general read without pleasure. </p>
-			<p>Sincerity is the way of Heaven. </p>
-			<p>The man who moves a mountain begins by carrying away small stones.</p>
-			<p>While there's life, there's hope. </p>
-			<p>Paradise is where I am. </p>
+			<div class="box">
+				<p>Well done is better than well said.</p>
+				<p>Seeing much, suffering much, and studying much, are the three pillars of learning. </p>
+				<p>Education is a progressive discovery of our own ignorance. </p>
+				<p>I want to know God's thoughts; the rest are details.</p>
+				<p>When all think alike, no one thinks very much.</p>
+				<p>Science is a wonderful thing if one does not have to earn one's living at it. </p>
+				<p>It's not that I'm so smart , it's just that I stay with problems longer.</p>
+				<p>Theories should be as simple as possible, but not simpler. </p>
+				<p>Technological progress is like an axe in the hands of a pathological criminal.</p>
+				<p>I never came upon any of my discoveries through the process of rational thinking. </p>
+				<p>Try not to become a man of success but rather to become a man of value. </p>
+				<p>Gravitation cannot be held responsible for people falling in love.</p>
+				<p>What is written without effort is in general read without pleasure. </p>
+				<p>Sincerity is the way of Heaven. </p>
+				<p>The man who moves a mountain begins by carrying away small stones.</p>
+				<p>While there's life, there's hope. </p>
+				<p>Paradise is where I am. </p>
+			</div>
 		</div>
 	</body>
 </html>
+<!-- 21/12/30 -->

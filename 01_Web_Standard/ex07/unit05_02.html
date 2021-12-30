@@ -4,18 +4,57 @@
 		<title>그림자 효과 만들기</title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
+			/* 초기화 */
+			*{padding: 0; margin: 0;}
 			
+			#box{
+				height: 400px;
+				margin: 0% 5%;
+				padding: 30px 0 ;
+				border: gray 1px solid;
+				border-top: 10px black solid;
+				box-shadow: 0 10px 2px gray;
+			}
+			h1{
+				border-radius: 10px 0;
+				text-align: center;
+				background: orange;
+				border: orange;
+				width: 400px;
+				margin: 10px auto;
+				box-shadow: 10px 10px 0 red;
+				text-shadow: 7px 7px 7px black;
+			}
+
+			.bg{
+				margin: 20px auto;
+				background: url(./images/frame_beige.png) no-repeat;
+				/* 이미지 크기만큼 가로세로넓이 지정 */
+				width: 377px;
+				height: 231px;
+				box-shadow: 5px 5px 40px #666;
+				border-radius: 25px;
+			}
+			p{
+				padding-top: 60px;
+				text-align: center;
+				width: 80%;
+				margin: 0 auto;
+			}
 		</style>
 	</head>
 
 	<body>
-		<h1>Box Shadow</h1>
-		<div>
-			<p>Try not to become a man of success but rather try to become a man of value. <br />
-						(Albert Einstein)
-						성공한 사람이 아니라 가치 있는 사람이 되려고 힘써라. <br />
-						(알버트 아인슈타인)
-			</p>
+		<div id="box">
+			<h1>Box Shadow</h1>
+			<div class="bg">
+				<p>Try not to become a man of success but rather try to become a man of value. <br />
+							(Albert Einstein)
+							성공한 사람이 아니라 가치 있는 사람이 되려고 힘써라. <br />
+							(알버트 아인슈타인)
+				</p>
+			</div>
 		</div>
 	</body>
 </html>
+<!-- 21/12/30 -->

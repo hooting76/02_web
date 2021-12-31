@@ -14,6 +14,7 @@
 				margin:0px; 
 				padding:5px 50px; 
 				background-color:#666; 
+				text-align: center;
 				}
 			h2 {
 				font-size:1.5em;
@@ -80,10 +81,14 @@
 				border-radius:5px;
 				}
 			/* nav Layout */
+			/* absol은 부라우저 왼쪽상단이 00 relative는 그 영역의 왼쪽상단. */
 			
-		</style>
-	</head>
-
+			nav{width: 800px; height: 50px; background: chartreuse; margin: 0 auto;}
+			#logo{position: relative; top: 0; left: -100px; float: left;}
+			#topMenu{float: right; list-style: none; position: relative; top: -30px; left: 0;}
+			#topMenu li{float: left;}
+			#topMenu .liStyle:after{content: "/"; white-space: pre;}			
+			</style>
 	<body>
 		<nav>
 			<figure>
@@ -127,3 +132,4 @@
 		</section>
 	</body>
 </html>
+<!-- 21/12/31 -->

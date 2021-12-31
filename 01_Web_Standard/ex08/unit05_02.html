@@ -30,7 +30,20 @@
 				letter-spacing:-1px;
 				}
 			/* Animation */
+			#book1{width: 170px; background: red; height: 47px; overflow: hidden;
+			transition: width 2s ;}
+			#book1:hover{width: 700px;}
+
 			
+			#book2{width: 300px; height: 47px; background: yellow; overflow: hidden; transition-property: width;
+			transition-duration: 3s; transition-delay: 2s; transition-timing-function: ease-in;}
+			#book2:hover{width: 750px;}
+
+			#book3{width: 200px; height: 47px; overflow: hidden; transition: width 2s; background: blue; transition-delay: 2s;}
+			#book3:hover{width: 750px;}
+
+			#book4{width: 200px; height: 47px; overflow: hidden; transition: width 2s; background: chocolate;}
+			#book4:hover{width: 600px;}
 		</style>
 	</head>
 
@@ -53,14 +66,15 @@
 					<dd>캐릭터 디자인부터 고급 일러스트까지 만능 벡터 그래픽툴.</dd>
 				</dl>
 			</div>
-			<dl>
+			<dl id="book3">
 				<dt>드림위버 CS5</dt>
 				<dd>풍부한 실습 문제를 통해 드림위버의 기본기를 확실하게 내것으로 만든다.</dd>
 			</dl>
-			<dl>
+			<dl id="book4">
 				<dt>프리미어 CS5</dt>
 				<dd>컷 편집부터 출력까지 책임지는 원스톱 영상 편집 툴.</dd>
 			</dl>
 		</section>		
 	</body>
 </html>
+<!-- 21/12/31 -->

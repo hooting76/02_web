@@ -27,7 +27,7 @@
 				padding:10px 15px; 
 				background-color:#f39; 
 				width:880px;
-				margin:20px 0px;
+				margin: 20px auto;
 				}
 			h3 {
 				font-size:1.2em; 
@@ -39,10 +39,21 @@
 				}
 			#bookImg {
 				margin:30px 80px;
-				text-align:right;
+				text-align: center;
 				}
 			/* Layout */
-			
+			/* column에 대한 count=문단갯수 / gap = 글 간격 / rule= 문단 사이 경계선 옵션이다. */
+			#bookPart{ width: 900px; margin: 20px auto; column-count: 3; column-gap: 40px; column-rule: 1px dashed #666;}
+
+			@media screen and (max-width: 900px) {
+				h2{width: 100%;}
+				#bookPart{
+					width: 100%;
+					column-count: 2;
+					padding: 0 20px;
+					box-sizing: border-box;
+				}
+			}
 		</style>
 	</head>
 
@@ -67,3 +78,4 @@
 		</div>
 	</body>
 </html>
+<!-- 21/12/31 -->

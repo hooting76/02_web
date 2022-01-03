@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜지션</title>
+    <style>
+        /* transition-property는 바꾸고자 하는 요소를 지정함. */
+        /* transition-timing-function: linear; 시작과 끝까지 똑같은 속도 */
+        /* transition-timing-function: ease;은 처음엔 천천히 시작하고 점점 빨라지다가 마지막엔 천천히 끝남. */
+        /* transition-timing-function: ease-in; 은 시작은 느리게*/
+        /* transition-timing-function: ease-out; 은 느리게 끝남*/
+        /* transition-timing-function: ease-in-out 은 느리게 시작하고 느리게 끝남*/
+
+        .box{width: 100px; height: 100px; background: red; border-radius: 10px; transition-property: background, border-radius, width;
+        transition-duration: 2s; transition-timing-function: linear;}
+        .box:hover{background-color: yellowgreen; border-radius: 50px; width: 500px;}
+
+        .box2{width: 100px; height: 100px; margin: 100px; background: hotpink; transition: 2s ease-in;}
+        .box2:hover{transform: scale(2) perspective(120px) rotateX(180deg);}
+
+        .box3{width: 100px; height: 100px; background: indigo;text-align: center; line-height: 100px; color: white; 
+            animation-name: myani; animation-duration: 2s; animation-iteration-count: infinite; animation-direction: alternate;
+            position: absolute; top: 0; left: 10px;}
+            @keyframes myani{
+                0%{left: 10px;}
+                100%{left: 1800px;}
+            }
+            @keyframes myani{
+                form{left: 10px; background: green;}
+                50%{left: 1800px; background: purple; top: 800px;}
+                to{left: 1880px; background: yellow; top: 500px;}
+            }
+
+            .box4{width: 100px; height: 100px; background: red; 
+                animation: ani1 1.5s ease-in infinite, ani2 1.5s ease-in infinite alternate;}
+                @keyframes ani1{
+                    form{transform: perspective(200px) rotateX(0deg) rotateY(0deg);}
+                    50%{transform: perspective(200px) rotateX(-180deg) rotateY(0deg);}
+                    to{transform: perspective(200px) rotateX(-180deg) rotateY(-180deg);}
+                }
+                @keyframes ani2{
+                    form{background: red;}
+                    50%{background: green;}
+                    to{background: blue;}
+                }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3">Animation</div>
+    <div class="box4"></div>
+</body>
+</html>
+<!-- 2022/01/03 -->

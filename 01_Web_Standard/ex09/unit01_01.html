@@ -7,7 +7,41 @@
 			body, button { 
 				font-family: "맑은 고딕", 돋움, sans-serif; 
 				}
-			
+			#memberBox{
+				width: 400px;
+				padding: 20px;
+				margin: 50px auto;
+				text-align: center;
+				background: white;
+				/* to 방향 으로 그라디언트 방향 조절 가능. */
+				background: linear-gradient(to top, #fff, #ddd);
+				box-shadow: 5px 5px 10px #666;
+			}
+			.btnOrange{
+				padding: 10px 20px;
+				border: 1px solid orange;
+				background: red;
+			}
+			.btnOrange:hover{
+				background-image: linear-gradient(rgba(255,255,255,.5),(rgba(255,255,255,.8)));
+			}
+			.gradient{
+				width: 400px;
+				height: 200px;
+				margin: 0 auto;
+				/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+0,8f0222+53,8f0222+53,6d0019+100 */
+				background: #a90329; /* Old browsers */
+				background: -moz-linear-gradient(top,  #a90329 0%, #8f0222 53%, #8f0222 53%, #6d0019 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top,  #a90329 0%,#8f0222 53%,#8f0222 53%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom,  #a90329 0%,#8f0222 53%,#8f0222 53%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+			}
+			.gradient1{
+				width: 400px;
+				height: 200px;
+				margin: 0 auto;
+				background: radial-gradient(cyan, yellow , green );
+			}
 		</style>
 	</head>
 
@@ -16,5 +50,8 @@
 			<p>아직 infoPub 회원이 아니세요? </p>
 			<button class="btnOrange">회원 가입 하기</button>
 		</div>
+		<div class="gradient"></div>
+		<div class="gradient1"></div>
 	</body>
 </html>
+<!-- 2022/01/03 -->

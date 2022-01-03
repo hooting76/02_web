@@ -4,16 +4,46 @@
 		<title>갤럭시 노트 완전 정복 출간 기념 이벤트  </title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
+		*{margin: 0; padding: 0;}
 
-			
+		body{background: url(./images/bg_event.png) no-repeat 50% 40px black; color: white;  font: .75em "맑은 고딕", 돋움, arial;}
+		header h1, h2, h3{display: none;}
+		nav{background: orange; height: 40px; border-bottom: oldlace 2px solid;}
+		nav ul{text-align: center; list-style: none; padding: 10px;}
+		nav ul li{display: inline-block; padding: 0 5px;}
+		nav ul li a{text-decoration: none; color: black;}
+		nav ul li a:hover{color: white; background: black; border-radius: 5px;}
+
+		section{position: relative; width: 458px; margin: 0 auto;}
+		section p{position: absolute; top: 270px; left: 220px; width: 230px; color: black; 
+			text-align: justify; font-size: 1em;}
+		
+		section dl{position: absolute; top:350px; left: 220px; 
+		background: url(./images/event_goods.png) no-repeat 100% 10px; padding-bottom: 30px;}
+		section dl dt{background: black; border-radius: 5px; color: white; text-align: center;
+		margin-bottom: 5px; width: 70px;}
+		section dl dd{margin-bottom: 10px;}
+		section dl .style1{width: 170px; text-align: justify;}
+
+		footer{border-top: 3px solid red; position: fixed; width: 100%; bottom: 0; margin: 0 auto; text-align: center;}
+		footer p{text-align: center; padding-top: 20px;position: relative; width: 458px; margin: 0 auto;}
+		footer p::after{
+			content:"";
+			position: absolute;
+			background: url(./images/logo_footer.png) no-repeat;
+			width: 62px; height: 12px;
+			top: 24px; right: 45px;
+		}
+		footer p a{text-decoration: none; color: #fff}
+
 		</style>
 	</head>
 
 	<body>	
 		<header>
-			<h1>갤럭시 노트 완전 정복 출간 기념 이벤트</h1> 
+			<h1 class="top_banner">갤럭시 노트 완전 정복 출간 기념 이벤트</h1> 
 			<h2>모바일 라이프에서 아날로그 감성까지 100배 즐기기! </h2>
-			<h3>	갤럭시 노트를 다루는 가장 합리적인 방법!</h3> 
+			<h3>갤럭시 노트를 다루는 가장 합리적인 방법!</h3> 
 		</header>
 		<nav>
 			<ul>
@@ -42,3 +72,5 @@
 		</footer>
 	</body>
 </html>
+<!-- 2022/01/03 -->
+<!-- !복습 필수! -->

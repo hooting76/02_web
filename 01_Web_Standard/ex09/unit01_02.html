@@ -18,18 +18,36 @@
 				}
 			/* Gradient Menu Bar */
 
+			/* 1/3 ~ 1/4 */
 			nav{background-image: linear-gradient(to top,#DC143C, #FF0000 );}
+
 			#topNav{
+				padding: 0 0;
+				margin: 0 auto;
+				font-weight: bold;
+				line-height: 250%;
 				text-align: center;
 				list-style: none;
 				height: 40px;
+				width: 779px;
 			}
 			#topNav li{
+				text-transform: uppercase;
 				display: inline-block;
 				padding: 0 5px;
 			}
 			#topNav li a{
+				color: white;
 				text-decoration: none;
+			}
+			#topNav li a::after{
+				content: "/";
+			}
+			#topNav li a:visited{
+				text-decoration: none;
+			}
+			#topNav li:hover{
+				background: linear-gradient(#fff, #000);
 			}
 
 		
@@ -55,4 +73,4 @@
 		</nav>
 	</body>
 </html>
-<!-- 2022/01/03 -->
+<!-- 2022/01/03 ~ 01/04-->

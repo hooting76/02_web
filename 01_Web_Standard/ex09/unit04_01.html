@@ -4,6 +4,41 @@
 	<title>이미지 배치하고 롤오버시 블러 효과 적용하기</title>
 	<meta charset="UTF-8">
 	<style type="text/css">
+		*{padding: 0; margin: 0;}
+
+		/* 배경이미지 삽입 */
+		body{background: url(./images/book_bg.png) no-repeat 50% 100px; margin-top: 30px;}
+
+		/* 상단문구에 대한 css */
+		h1{text-align: center; color: white; text-shadow: 1px 1px 5px gray; font-style: italic;
+		padding-bottom: 20px; font-size: 2em;}
+
+		#bookList{
+			width: 500px;
+			height: 240px;
+			border: 5px solid gray;
+			margin: 0 auto;
+			border-radius: 20px;
+		}
+		#bookList ul{
+			list-style: none;
+		}
+		#bookList ul li{
+			float: left;
+			padding: 24px 0;
+		}
+		#bookList ul li:not(:last-child){
+			margin-right: 65px;
+		}
+		#bookList ul li:first-child{
+			margin-left: 20px;
+		}
+
+		#bookList ul li:hover a img{
+			box-shadow: 1px 1px 20px green;
+		}
+
+
 
 	</style>
 </head>
@@ -18,3 +53,4 @@
 	</div>
 </body>
 </html>
+<!-- 2022/01/04 -->

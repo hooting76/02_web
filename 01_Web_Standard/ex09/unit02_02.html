@@ -32,6 +32,54 @@
 				}
 			/* Rollover Design */
 			
+			/* 리스트 스타일 삭제 */
+			#gallery{
+				list-style: none;
+			}
+			/* nav 위치정의 */
+			nav{
+				height: 110px;
+				width: 400px;
+				margin: 0 auto;
+			}
+
+			/* 이미지틀 위치 조정 */
+			nav ul li{
+				height: 100px;
+				width: 100px;
+				float: left;
+				border: 1px solid black;
+				position: relative;
+			}
+			/* 이미지틀 간격조정 */
+			nav ul li:not(:last-child){margin-right: 20px;}
+
+			/* 이미지 크기조정 */
+			nav ul li a img{
+				display: block;
+				height: 100%;
+				width: 100%;
+				transition: .5s;
+				z-index: 1;
+				/* 변화하는 속성들 나열 */
+				transition-property: width, height; 
+				transition-duration: .5s; 
+				position: relative;
+			}
+
+			/* 마우스를 올렸을때의 이미지 커지는 반응 */
+			nav ul li:hover a img{
+				height: 300px;
+				width: 300px;
+				box-shadow: 0 0 10px black;
+				z-index: 10;
+			}
+			/* 위 가상선택자와 동시에 기존 보더라인을 잠시 지우는 효과 */
+			nav ul li:hover{
+				border: none;
+			}
+
+			
 		</style>
 	</head>
 
@@ -48,3 +96,4 @@
 		</nav>
 	</body>
 </html>
+<!-- 2022/01/04 -->

@@ -4,12 +4,31 @@
 		<title> 투명도를 이용한 롤오버 이미지 만들기 </title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
-			body {
-				font:0.95em Arial,sans-serif;
-				margin:50px 0px;
-				}
-			
-			
+			/* 초기화 */
+			*{margin: 0; padding: 0;}
+			/* 제목 텍스트 위치조정 */
+			h1{text-align: center; margin-bottom: 15px;}
+			/* 문서전체 마진 및 글씨폰트, 글씨크기 지정 */
+			body {font:0.95em Arial,sans-serif; margin:50px 0px;}
+			/* li테그 들어갈 영역지정 및 위치조정 */
+			nav ul{ list-style: none; width: 352px; overflow: hidden; margin: 0 auto;}
+			/* 이미지틀 위치 조정 */
+			nav ul li{height: 100px; width: 100px; border: 2px solid lightskyblue;float: left; position: relative;}
+			/* 이미지 맞춰 넣기 및 투명도 조절 */
+			nav ul li a img{width: 100%; height: 100%; opacity: .5;}
+
+			/* 인라인요소이므로 block을 부여해서 상하좌우의 너비조정 할수있도록함. + 트랜지션 시간 부여*/
+			nav ul li a span{position: absolute; top: -32px; left: 0; background:plum;
+			display: block; width: 100%; text-align: center; height: 20px; padding: 5px 0; transition: .5s;}
+			/* 가려진 글씨에 대한 색상 부여 */
+			nav ul li a span strong{color: white;}
+
+			/* 마지막요소만 margin-right: 20px; 이 아니라고 선언 */
+			nav ul li:not(:last-child){margin-right: 20px;}
+			/* 마우스를 올릴때 가려졌던 span을 밑으로 내림 (-32에서 0으로 이동) */
+			nav ul li:hover a span{top: 0;}
+			/* 마우스 올렸을때의 투명도 변화 */
+			nav ul li:hover a img{opacity: 1;}
 		</style>
 	</head>
 
@@ -47,3 +66,4 @@
 		</nav>
 	</body>
 </html>
+<!-- 2022/01/04 -->

@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web일기장</title>
     <style>
+        li{
+            margin: 0 auto;
+            padding: 5px 0px;
+        }
         #box {
             width: 1000px;
             margin: 30px auto;
@@ -14,6 +18,10 @@
             padding: 30px 30px;
             border: 3px solid black;
             border-radius: 10px;
+        }
+        dt{
+            margin: 0 auto;
+            padding: 5px 0px;
         }
 
         body {
@@ -244,6 +252,32 @@
             <li><a href="01_Web_Standard/ex08/unit05_02.html">transition 속성으로 애니메이션 만들기</a></li>
             <li>링크 참조</li>
         </ul>
+        <hr><br>
+        <h4>22년1월3일</h4>
+        <ul>
+            <li><a href="01_Web_Standard/ex08/unit05_03.html">여러 트랜지션 관련</a></li>
+            <li>transition-property 뒤에 오는 요소는 바꾸고자 하는 요소를 지정함. <br>
+            이와 가상선택자 와 연계되는 경우가 있다.(본문예시 참조) <br>
+            transition-timing-function: 에는 각각 linear, ease, ease-in, ease-out, ease-in-out이 뒤로 올수 있다. <br>
+            각각의 의미는  linear:시작과 끝까지 똑같은 속도, ease은 처음엔 천천히 시작하고 점점 빨라지다가 마지막엔 천천히 끝남, <br>
+            ease-in: 시작은늬리게, ease-out은 느리게 끝, ease-in-out 은 느리게 시작하고 느리게 끝남을 의미한다.
+            <li>+ 애니매이션 효과를 부여하기 위해서는 animation-name: NAME; animation-duration: Ns; animation-iteration-count: ; animation-direction: ;등의 요소를 지정하며, <br>
+            이후, @keyframes name으로 선언후 진행한다. @keyframes name{}안에서 form(시작점), 50%(중간점), to(끝점) 으로 때에 맞춰서 트랜스폼 효과를 부여할 수 있다.(자세한 효과는 본문참조)</li>
+            <li>위의 애니매이션은 animation:선언 후에 이름, 지속시간, 반복여부, 진행방향 등을 한번에 선언할 수 있다. </li>
+            <li><a href="01_Web_Standard/ex08/total1.html">종합예제1</a></li>
+            <li>!! 복습 필수 !!(진짜 털릴수있는 부분이니 꼭 봐라.)</li>
+            <p>- 어려웠던 부분 -</p>
+        </ul>
+        <dl>
+            <dt>1. display속성 활용의 어려움</dt>
+            <dd>속성 활용에 대한 이해도 부족</dd>
+            <dt>2. position속성에 대한 이해도 및 활용도 부족</dt>
+            <dd>relative, absolute 등의 상세 속성 이해도 부족으로 판단.</dd>
+            <dt>3. ::after 활용 능력 부족</dt>
+            <dd>어디에 활용해야되는지를 모르고있었음.</dd>
+            <dt>4. text-align: justify에 대한 이해도 부족</dt>
+            <dd>어떻게 활용하는지에 대한 이해 부족.</dd>
+        </dl>
     </div>
 </body>
 

@@ -13,7 +13,7 @@
         }
 
         #box {
-            width: 1000px;
+            width: 800px;
             margin: 30px auto;
             background: snow;
             padding: 30px 30px;
@@ -29,6 +29,43 @@
         body {
             background: lightslategrey;
         }
+
+        /* 위로가기 버튼 */
+        .toTop{
+            display: block;
+            text-align: center;
+            line-height: 150%;
+            width:50px;
+            height: 50px;
+            /* border: 1px solid black; */
+            position: fixed;
+            bottom: 110px;
+            right: 50px;
+        }
+        .toTop a img{
+            transform: rotate(270deg);
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 제일밑으로 가기 버튼 */
+        .toBottom{
+            display: block;
+            text-align: center;
+            line-height: 150%;
+            width:50px;
+            height: 50px;
+            /* border: 1px solid black; */
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+        }
+        .toBottom a img{
+            transform: rotate(90deg);
+            width: 100%;
+            height: 100%;
+        }
+
     </style>
 </head>
 
@@ -37,6 +74,12 @@
         <h1>Web 일기장</h1>
         <h2>Web Standard</h2>
         <h4>21년12월20일</h4>
+        <div>
+            <span class="toTop"><a href="#"><img src="./01_Web_Standard/ex07/images/arrow_right.png" alt="위로"></a></span>
+        </div>
+        <div>
+            <span class="toBottom"><a href="#bottom"><img src="./01_Web_Standard/ex07/images/arrow_right.png" alt="위로"></a></span>
+        </div>
         <ul>
             <li><a href="01_Web_Standard/ex02/unit02_01.html">h요소, p, br, 블록요소, 인라인 요소</a></li>
             <li><a href="01_Web_Standard/ex02/unit02_02.html">Entity코드</a></li>
@@ -302,7 +345,13 @@
             <li><a href="01_Web_Standard/ex09/unit04_01.html">이미지 배치하고 롤오버시 블러 효과 적용</a></li>
             <li>큰 틀 자체는 위 내용과 비슷하다. 다만, 가상선택자 :hover시에 주어지는 효과정도의 차이라고 볼수있다.</li>
         </ul>
+        <hr><br>
+        <h4>22년1월5일</h4>
+        <ul>
+            <li></li>
+        </ul>
     </div>
+    <!-- 하단으로 이동을 위한 테그 -->
+    <p id="bottom"></p>
 </body>
-
 </html>

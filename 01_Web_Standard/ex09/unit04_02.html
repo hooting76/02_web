@@ -46,10 +46,21 @@
 	#bookList ul li a img.frame { 
 		margin-right:63px;
 		}
-	#bookList ul li a:hover img { 
+	#bookList ul li a:hover span .frame { 
+		box-shadow:0px 0px 50px #009900;
+		}
+	#bookList ul li a:hover span .frame2 { 
 		box-shadow:0px 0px 50px #009900;
 		}
 	/*web sticker */
+	#bookList ul li a .hotIcon{
+		display: block;
+		height: 40px;
+		width: 40px;
+		position: relative;
+		top: -180px;
+		left: -20px;
+	}
 
 	</style>
 </head>
@@ -57,10 +68,14 @@
 	<h1>New Book</h1>
 	<div id="bookList">
 		<ul>
-			<li><a href="#"><span><img src="images/book1.png" width="107" height="156" alt="book1" class="frame"/><span class="hit"></span></span></a></li>
-			<li><a href="#"><span><img src="images/book2.png" width="107" height="156" alt="book2" class="frame"/><span class="hit"></span></span></a></li>
-			<li><a href="#"><span><img src="images/book3.png" width="107" height="156" alt="book3" /><span class="hit"></span></span></a></li>
+
+			<li><a href="#"><span><img src="images/book1.png" width="107" height="156" alt="book1" class="frame"/><span class="hit"><img src="./images/ico_hot.png" alt="인기상품" class="hotIcon"></span></span></a></li>
+			<li><a href="#"><span><img src="images/book2.png" width="107" height="156" alt="book2" class="frame"/><span class="hit"><img src="./images/ico_hot.png" alt="인기상품" class="hotIcon"></span></span></a></li>
+			<li><a href="#"><span><img src="images/book3.png" width="107" height="156" alt="book3" class="frame2"/><span class="hit"><img src="./images/ico_hot.png" alt="인기상품" class="hotIcon"></span></span></a></li>
 		</ul>
 	</div>
 </body>
 </html>
+<!-- 21/01/05 -->
+<!-- 전 예제에서 hit로고 를 넣은 예제. -->
+<!-- 로고의 경우 html테그에 하드코딩을 하였다. -->

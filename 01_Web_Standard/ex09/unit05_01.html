@@ -20,14 +20,67 @@
 			text-align:center;
 			}
 		/* Login Form Design */
-
+		fieldset{
+			width: 330px;
+			margin: 20px auto;
+			padding: 50px;
+			border: 5px solid gray;
+			border-radius: 10px;
+		}
+		fieldset legend{
+			display: none;
+		}
+		#login{
+			float: left;
+		}
+		#login label{
+			display: block;
+			float: left;
+			width: 60px;
+			font-weight: bold;
+		}
+		#login p input{
+			background: #dedede;
+			border: none;
+			margin-bottom: 10px;
+		}
+		#btnLogin{
+			float: left;
+			display: block;
+			width: 80px;
+			height: 45px;
+			background: royalblue;
+			border-radius: 10px;
+			color: white;
+			margin-left: 10px;
+			padding: 5px;
+			border: none;
+		}
+		#btn1{
+			clear: both;
+			margin-left: 60px;
+			padding-bottom: 10px;
+		}
+		#btn2{
+			margin-left: 60px;
+		}
+		#btnJoin , #btnSearch{
+			background: royalblue;
+			color: white;
+			padding: 2px;
+			border-radius: 5px;
+			border: none;
+		}
+		#btn2 input{
+			padding: 5px;
+		}
 	</style>
 </head>
 <body>
-	<form id="loginForm">
+	<form id="loginForm" action="#" method="post" name="form1">
 		<h1>Member Login</h1>
 		<fieldset>	
-			<legend>Member Loin</legend>
+			<legend>Member Login</legend>
 			<div id="login">
 				<p>
 					<label for="userId" class="labelStyle">아이디</label>
@@ -53,3 +106,5 @@
 	</form>
 </body>
 </html>
+<!-- 22/01/05 -->
+<!-- 과제: 자신이 만들기로 한 관공서 로그인페이지를 만들어오기 / 없으면 아무사이트 로그인페이지 -->

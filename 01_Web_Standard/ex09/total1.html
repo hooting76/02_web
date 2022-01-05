@@ -4,8 +4,122 @@
 		<title> Sugar Free Shopping Mall </title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
-			/* Basic */
-			
+			*{margin: 0; padding: 0;}
+
+			body{background: gray; padding: 10px;}
+
+			#mainNav{
+				list-style: none;
+				margin: 20px auto;
+				width: 690px;
+				height: 150px;
+			}
+			#mainNav li{
+				display: block;
+				width: auto;
+				float: left;
+				width: 150px;
+				height: 150px;
+				margin: 5px;
+			}
+			#mainNav li:nth-child(2){
+				background: url(./images/sandal.png) no-repeat center center;
+				border: white 3px solid;
+				border-radius: 10px;
+			}
+			#mainNav li:nth-child(3){
+				background: url(./images/neck.png) no-repeat center center;
+				border: white 3px solid;
+				border-radius: 10px;
+			}
+			#mainNav li:nth-child(4){
+				background: url(./images/bag.png) no-repeat center center;
+				border: white 3px solid;
+				border-radius: 10px;
+			}
+			#mainNav li:nth-child(5){
+				background: url(./images/top.png) no-repeat center center;
+				border: white 3px solid;
+				border-radius: 10px;
+				clear: both;
+			}
+			#mainNav li:nth-child(6){
+				background: url(./images/dress.png) no-repeat center center;
+				border: white 3px solid;
+				border-radius: 10px;
+			}
+			#mainNav li:nth-child(7){
+				background: url(./images/bottom.png) no-repeat center center;
+				border: white 3px solid;
+				border-radius: 10px;
+			}
+			#mainNav li a{
+				display: block;
+				color: white;
+				text-decoration: none;
+				font-size: 2em;
+				font-weight: bold;
+				text-align: center;
+				text-shadow: 0px 0px 5px black;
+				position: relative;
+				top: 30%;
+				opacity: .6;
+			}
+			#mainNav li a:hover{
+				opacity: 1;
+			}
+			#mainNav li:first-child{
+				background-image: linear-gradient(to top, #006400, #7FFF00);
+				border: white 3px solid;
+				border-radius: 10px;
+			}
+			#mainNav li:last-child{
+				background-image: linear-gradient(to top, #B22222	, #FF0000);
+				border: white 3px solid;
+				border-radius: 10px;
+			}
+
+			/* 사실 미디어쿼리 하나마다 모든 css를 조정해줘야된다. */
+			/* 시간없어서 body scale를 이용하여 야매로 하였다. */
+			/* 화면넓이가 0에서 576px 까지 (모바일버전)*/
+			@media screen and (max-width: 576px) {
+				#mainNav li:nth-child(4){
+					clear: both;
+				}
+				#mainNav li:nth-child(5){
+					clear: none;
+				}
+				#mainNav li:nth-child(7){
+					clear: both;
+				}
+				body{scale: .5;}
+			}
+			/* 화면넓이가 0에서 960px 까지 (랩탑버전)*/
+			@media screen and (min-width: 577px)and (max-width: 960px) {
+				#mainNav li:nth-child(4){
+					clear: both;
+				}
+				#mainNav li:nth-child(5){
+					clear: none;
+				}
+				#mainNav li:nth-child(7){
+					clear: both;
+				}
+				body{scale: .7;}
+			}
+		/* 화면넓이가 0에서 960px 까지 (랩탑버전)*/
+		    @media screen and (min-width: 961px) {
+				#mainNav li:nth-child(4){
+					clear: none;
+				}
+				#mainNav li:nth-child(5){
+					clear: both;
+				}
+				#mainNav li:nth-child(7){
+					clear: none;
+				}
+				body{scale: 1;}
+			}
 		</style>
 	</head>
 
@@ -24,3 +138,4 @@
 		</div>
 	</body>
 </html>
+<!-- 2022/01/05 -->

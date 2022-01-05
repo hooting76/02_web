@@ -1,73 +1,47 @@
-<!DOCTYPE HTML>
-<html lang="ko">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>세로바가 있는 테이블 헤더 만들기</title>
-	<meta charset="UTF-8" />
-	<style type="text/css">
-		
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>미디어쿼리 예제(배경색상 바꾸기)</title>
+	<style>
+		body{
+			background: greenyellow; color: #fff
+		}
+		/* 화면넓이가 0에서 1600px 까지 (pc버전)*/
+		@media screen and (max-width: 1600px) {
+			body{background: plum;}
+		}
+		/* 화면넓이가 0에서 1024px 까지 (pc버전)*/
+		@media screen and (max-width: 1024px) {
+			body{background: lightskyblue;}
+		}
+		/* 화면넓이가 0에서 960px 까지 (랩탑버전)*/
+		@media screen and (max-width: 960px) {
+			body{background: rosybrown;}
+		}
+		/* 화면넓이가 0에서 768px 까지 (테블릿버전)*/
+			@media screen and (max-width: 768px) {
+			body{background: lightslategray;}
+		}
+		/* 화면넓이가 0에서 576px 까지 (모바일버전)*/
+		@media screen and (max-width: 576px) {
+			body{background: lime;}
+		}
 	</style>
 </head>
-
 <body>
-	<h1><img src="images/title_event.png" width="151" height="28" alt="이벤트 당첨자 게시판" /></h1>
-	<table id="tableDesign">
-		<caption>이벤트 당첨자 게시판</caption>
-		<tr>
-			<th><span>번호</span></th>
-			<th><span>이벤트 명</span></th>
-			<th><span>이벤트 기간</span></th>
-			<th><span>당첨자 발표일</span></th>
-			<th>당첨자 보기</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<td class="leftStyle">그랜드 리뉴얼 오픈 기념 추천 프로모션</td>
-			<td>2012/03/05~2012/03/08</td>
-			<td>2012/03/15</td>
-			<td><input type="button" value="확인" class="btnView" /></td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td class="leftStyle">졸업,입학 프로모션! 내 맘대로 골라 1+1</td>
-			<td>2012/02/25~2012/03/01</td>
-			<td>2012/03/10</td>
-			<td><input type="button" value="확인" class="btnView" /></td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td class="leftStyle">트위터와 페이스북 SNS 이벤트 나눔 프로모션</td>
-			<td>2012/02/10~2012/02/13</td>
-			<td>2012/02/26</td>
-			<td><input type="button" value="확인" class="btnView" /></td>
-		</tr>
-		<tr>
-			<td>4</td>
-			<td class="leftStyle">대학생 스마트 서포터즈를 모집합니다.</td>
-			<td>2012/01/15~2012/01/18</td>
-			<td>2012/01/30</td>
-			<td><input type="button" value="확인" class="btnView" /></td>
-		</tr>
-		<tr>
-			<td>5</td>
-			<td class="leftStyle">전국이 즐기는 신년 맞이 이벤트!</td>
-			<td>2012/01/01~2012/01/03</td>
-			<td>2012/01/05</td>
-			<td><input type="button" value="확인" class="btnView" /></td>
-		</tr>
-		<tr>
-			<td>6</td>
-			<td class="leftStyle">크리스마스 가족+연인+친구 2배 사랑 이벤트</td>
-			<td>2011/12/23~2011/12/25</td>
-			<td>2011/12/27</td>
-			<td><input type="button" value="확인" class="btnView" /></td>
-		</tr>
-		<tr>
-			<td>7</td>
-			<td class="leftStyle">어플 이벤트. 다운로드 받고 기프트콘 받자.</td>
-			<td>2011/12/11~2011/12/20</td>
-			<td>2011/12/22</td>
-			<td><input type="button" value="확인" class="btnView" /></td>
-		</tr>
-	</table>
+	<h1>미디어쿼리</h1>
+	<p>미디어쿼리는 화면 크기에 따른 각각의 속성값을 지정하여, 여러가지 화면을 구성하는 기술을 말한다.</p>
+	<p>@media only screen and (조건문) {실행문}</p>
+	<ul>
+		<li>@media: 미디어쿼리가 시작됨을 표시</li>
+		<li>only: 미디어 쿼리 구문을 해석하라는 명령어(생략 가능)</li>
+		<li>screen: 컴퓨터 스크린에서 사용한 css 정의</li>
+		<li>(조건문): 해당 크기를 설정할수 있음</li>
+		<li>(실행문): 조건에 따른 실행을 설정</li>
+	</ul>
 </body>
 </html>
+<!-- 2022/01/05 -->

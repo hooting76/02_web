@@ -3,8 +3,29 @@
 <head>
 	<title>해상도 크기에 따라 디자인 다르게 설정하기 </title>
 	<meta charset="UTF-8" />
-	<style type="text/css">		
-
+	<style type="text/css">
+		body{background: url(./images/pattern.png);}
+		span{display: none;}
+		div{float: right;}
+		
+		@media screen and (min-width:320px) and (max-width:799px){
+			h1{
+				background: url(./images/mediaQuery1.png) no-repeat center center;
+				height: 295px;
+			}
+		}
+		@media screen and (min-width:800px) and (max-width:1024px){
+			h1{
+				background: url(./images/mediaQuery2.png) no-repeat center center;
+				height: 570px;
+			}
+		}
+		@media screen and (min-width:1025px){
+			h1{
+				background: url(./images/mediaQuery3.png) no-repeat center center;
+				height: 700px;
+			}
+		}
 	</style>
 </head>
 <body>
@@ -14,3 +35,4 @@
 	</div>
 </body>
 </html>
+<!-- 2022/01/05 -->

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* id */
+#wrap{height: 550px; width: 700px; background-color: chartreuse; margin: 50px auto; text-transform: uppercase; text-align: center;
+}
+/* top */
+#header{height: 80px; width: 680px; background-color: #ddd; line-height: 100px; border: 10px solid pink;}
+/* mid */
+#section{ width: 100%; height: 400px; background-color: yellow;}
+#section .left{ width: 100px; height: 400px; background-color: red; float: left;}
+#section .center{width: 500px; height: 400px; background-color: blue; float: left;}
+#section .right{ width: 100px; height: 400px; background-color: red; float: left;}
+/* bot */
+#footer{ height: 30px; width: 680px; line-height: 30px; background-color: #ddd; border: 10px solid pink;}
+
+/* class */
+/* mid_left */
+.box1_1{ width: 80px; height: 92.5px; border-left: 10px solid pink; border-right: 10px solid pink;}
+.box1_1:not(:last-child){
+    border-bottom: pink 10px solid;
+}
+.color1{ background: yellow;}
+.color2{ background: lightblue;}
+
+/* mid_center */
+.box5_2{width: 500px; height: 200px;}
+.box5_2:first-child{
+    border-bottom: pink 10px solid;
+}
+.box5_2:last-child{
+    height: 190px;
+}
+.color3{background: skyblue;}
+.color4{background: cornflowerblue;}
+
+/* mid_right */
+.box1_2{width:80px; height: 195px; border-left: 10px solid pink; border-right: 10px solid pink; }
+.color5{background: crimson;}
+.color6{background: darkcyan;}
+/* 21/01/06 */

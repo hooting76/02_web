@@ -1,0 +1,30 @@
+@charset "utf-8";
+body{background: url(../images2/grid_back_02.gif);}
+#wrap{
+    width: 770px;
+    height: 560px;
+}
+
+.box2_3{width: 140px; height:210px; background: #fff; float: left;}
+.box1_1{width: 70px; height:70px; }
+.box3_2{width: 210px; height:140px;}
+.box1_3{width: 70px; height:210px; float: left;}
+.box3_3{width: 210px; height:210px; float: left;}
+.box11_1{width: 770px; height: 70px;}
+
+.color1{background: #edf798;}
+.color2{background: #f1ab41;}
+.color3{background: #ff9900;}
+
+.fl{float: left;}
+
+.box2_3 ul li img{
+    display: block;
+} 
+
+li{
+    margin-top: -2px;
+    /* height: 25px; */
+    list-style: none;
+}
+

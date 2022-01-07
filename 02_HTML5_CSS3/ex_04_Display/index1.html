@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility와 unvisibility</title>
+    <style>
+        /* 안보이게하는 여러가지 방법 */
+
+        /* 형태는 남고 안보이는것 */
+        #box{background: #ff0000; height: 200px; width: 300px; visibility: hidden;}
+        /* 형태도 남고 투명도 조절도 가능한 것 */
+        #box2{background: green; height: 200px; width: 300px; opacity: .5;}
+        /* 형태까지 사라지는것 */
+        #box3{background: green; height: 200px; width: 300px; display: none;}
+    </style>
+</head>
+<body>
+    <span>우와 금요일이다.</span>
+    <div id="box">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+    </div>
+    <span>주말에는 뭘 해야될까요.</span>
+    <span>우와 금요일이다.</span>
+    <div id="box2">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+    </div>
+    <span>주말에는 뭘해야 할까요.</span>
+</body>
+</html>
+<!-- 22/01/07 -->

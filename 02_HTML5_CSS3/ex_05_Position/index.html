@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{width: 100px; height: 100px; position: absolute;}
+        .box:first-child{background: red; z-index:1; top: 50px; left: 0;}
+        .box:nth-child(2){background: green; top: 90px; left: 50px;}
+        .box:last-child{background: blue; top: 120px; left: 100px;}
+        /* 부모의 포지셔닝이 매우 중요 */
+        body>div{height: 200px; width: 500px; background: brown; position: relative; overflow-y: scroll;}
+    </style>
+</head>
+<body>
+    <h1>마지막 시간</h1>
+    <div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h2>주말까지...</h2>
+</body>
+</html>
+<!-- 22/01/07 -->

@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+
+ul{list-style: none;}
+a{text-decoration: none; color: #222; text-transform: uppercase;}
+
+/* #header{width: 100%; height: 400px; background: linear-gradient(to bottom, blue, #dd88dd);}
+#header ul{background: orange; overflow: hidden;}
+#header ul li{float: left; margin-right: 2px;}
+#header ul li a{display: block; padding: 10px 10px 15px 10px; background: orchid;}
+#header ul li a:hover{border-bottom: lightcyan solid 5px; padding-bottom: 10px; color: white;} */
+/* 
+body{margin: 20px;}
+#header{width: 100%; height: 400px;}
+#header ul{overflow: hidden;}
+#header ul li{margin-bottom: 2px; background: gray; display: block; width: 70px; height: 50px; position: relative; padding: 5px 5px 5px 8px;} 
+#header ul li:hover{border-left: 3px solid orange; color: white; background-color: black; } 
+#header ul li a{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: lightgray; } */
+
+body{margin: 20px;}
+#header{
+    width: 100%; height: 400px;
+    background: linear-gradient(to bottom, rgb(212, 248, 7), rgb(50, 241, 226));
+}
+#header ul li{ background: palevioletred; margin-bottom: 2px; text-align: center; float: left; clear: both;}
+/* 미리 크기를 부여하고 호버시에 값을 변경하여 낮춘후, 보더값을 더하도록 한다. -> 일반상태 padding값 = 호버시 변경되는 패딩값 + 보더값 */
+#header ul li a{padding: 5px 10px 5px 15px; display: block;}
+#header ul li a:hover{padding-left: 10px; border-left: 5px solid #fff;}
+
+/* 22-01-10 */

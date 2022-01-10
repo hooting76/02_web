@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #222;}
+/* 
+.nav{background: lightgreen; padding: 10px;}
+.nav>ul{overflow: hidden; padding-left: 20px; width: 775px; margin: 0 auto;}
+.nav>ul::after{content: ""; clear: both; display: block;}
+
+.nav>ul>li{float: left; margin-left: 5px; width: 150px; position: relative; text-align: center;}
+.nav>ul>li>a{display: block; padding: 10px 20px;}
+.nav>ul>li:hover ul{display: block;}
+.nav>ul>li:hover>a{background: cyan; border-radius: 5px;}
+
+.nav>ul>li>ul{display:none; position: absolute; background: chocolate; width: 100%; top: 51px; left:0;} 
+.nav>ul>li>ul li{width: 100%; height: 35px; text-align: center; line-height: 35px;}
+.nav>ul>li>ul li:hover{background: coral;}
+.nav>ul>li>ul li:hover a{color: #fff;} */
+
+
+
+/* .nav{background: rgb(17, 158, 194);} */
+/* 메뉴 타이틀 자리 조정 */
+/* 높이 지정 안됨 */
+/* .nav>ul{ width: 775px; background: gold; margin: 0 auto;} */
+
+/* 메뉴 타이틀 세부 위치 조정 */
+/* 높이 지정이 안되서  display: block / clear: both;를 부여하여 높이를 부여하게 한다.(구체적으로 높이값을 알수없을때)  */
+/* .nav>ul:after{content: ""; clear: both; display: block;} */
+
+/* 네브 메뉴 타이틀 크기 */
+/* .nav>ul>li{float: left; margin-left: 5px; width: 150px; position: relative; text-align: center;} */
+/* 네브 메뉴 타이틀 내의 a 테그 패딩값 */
+/* .nav>ul>li>a{display: block; padding: 10px 20px;} */
+
+/* 동시에 해당 타이틀 글씨가 색상 변경 */
+/* .nav>ul>li:hover>a{ color: #fff; border-radius: 5px;} */
+
+/* 2뎁스 평상시 상태 (안보이는 상태일때)*/
+.nav>ul>li>ul{display: none; position: absolute; background: rgb(243, 167, 4); width: 100%; top: 40px; left: 0;}
+/* 메뉴 타이틀 호버시 숨겨진 2뎁스 리스트가 나타남. */
+.nav>ul>li:hover ul{display: block;}
+
+/* 2뎁스 리스트 셀 크기 정의 */
+.nav>ul>li>ul li{width: 100%; height: 35px; text-align: center;line-height: 35px;}
+/* 2뎁스 호버시 효과 */
+.nav>ul>li>ul li:hover{background: gold;}
+.nav>ul>li>ul li:hover a{ color: #fff;}
+
+/* 22-01-10 */
+/* 어려움 */
+
+.nav{background: darkorchid;}
+/* 메뉴바 위치, 크기선정 */
+.nav>ul{width: 775px; background: yellow; margin: 0 auto;}
+
+/* 메뉴 타이틀 세부 위치 조정 */
+/* 높이 지정이 안되서  display: block / clear: both;를 부여하여 높이값 사라지는걸 방지하게 한다.(구체적으로 높이값을 알수없을때)  */
+.nav>ul>li::after{content: ""; clear: both; display: block;}
+/* 메뉴 타이틀 크기 지정 */
+.nav>ul>li{text-align: center; width: 150px; float: left; position: relative; margin-left: 5px;}
+/* 타이틀내의 a테그 크기 지정 */
+.nav>ul>li>a{display: block; padding: 10px 20px; }
+
+/* 타이틀 호버시의 css변경 */
+/* 타이틀 자체 크기 */
+.nav>ul>li:hover>a{color: #fff; }
+

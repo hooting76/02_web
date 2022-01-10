@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #222;}
+
+#mainHeader{width: 960px; height:200px; background-color: coral; margin: 50px auto; position: relative;}
+#mainHeader .title{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;}
+
+#mainHeader .gnb{position: absolute; right: 0; top: 0;}
+#mainHeader .gnb ul{overflow: hidden;}
+#mainHeader .gnb ul li{float: left; margin-right: 5px; }
+#mainHeader .gnb ul li:hover{background-color: black; }
+#mainHeader .gnb ul li:hover a{color: white;}
+
+
+#mainHeader .nav ul{position: relative; top: 150px; left:50%; float: left;}
+#mainHeader .nav ul li{float:left;position: relative; left: -50%; }
+#mainHeader .nav ul li a{padding: 2px 40px; display: block;}
+#mainHeader .nav ul li:hover {background-color: black;}
+#mainHeader .nav ul li:hover a{color: white;}
+/* 22-01-10 */

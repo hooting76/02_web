@@ -20,22 +20,22 @@ a{text-decoration: none; color: #222;}
 
 
 
-/* .nav{background: rgb(17, 158, 194);} */
+.nav{background: rgb(17, 158, 194);}
 /* 메뉴 타이틀 자리 조정 */
 /* 높이 지정 안됨 */
-/* .nav>ul{ width: 775px; background: gold; margin: 0 auto;} */
+.nav>ul{ width: 775px; background: gold; margin: 0 auto;}
 
 /* 메뉴 타이틀 세부 위치 조정 */
 /* 높이 지정이 안되서  display: block / clear: both;를 부여하여 높이를 부여하게 한다.(구체적으로 높이값을 알수없을때)  */
-/* .nav>ul:after{content: ""; clear: both; display: block;} */
+.nav>ul:after{content: ""; clear: both; display: block;}
 
 /* 네브 메뉴 타이틀 크기 */
-/* .nav>ul>li{float: left; margin-left: 5px; width: 150px; position: relative; text-align: center;} */
+.nav>ul>li{float: left; margin-left: 5px; width: 150px; position: relative; text-align: center;}
 /* 네브 메뉴 타이틀 내의 a 테그 패딩값 */
-/* .nav>ul>li>a{display: block; padding: 10px 20px;} */
+.nav>ul>li>a{display: block; padding: 10px 20px;}
 
 /* 동시에 해당 타이틀 글씨가 색상 변경 */
-/* .nav>ul>li:hover>a{ color: #fff; border-radius: 5px;} */
+.nav>ul>li:hover>a{ color: #fff; border-radius: 5px;}
 
 /* 2뎁스 평상시 상태 (안보이는 상태일때)*/
 .nav>ul>li>ul{display: none; position: absolute; background: rgb(243, 167, 4); width: 100%; top: 40px; left: 0;}
@@ -51,19 +51,21 @@ a{text-decoration: none; color: #222;}
 /* 22-01-10 */
 /* 어려움 */
 
-.nav{background: darkorchid;}
+
+
+/* .nav{background: darkorchid;} */
 /* 메뉴바 위치, 크기선정 */
-.nav>ul{width: 775px; background: yellow; margin: 0 auto;}
+/* .nav>ul{width: 775px; background: yellow; margin: 0 auto;} */
 
 /* 메뉴 타이틀 세부 위치 조정 */
 /* 높이 지정이 안되서  display: block / clear: both;를 부여하여 높이값 사라지는걸 방지하게 한다.(구체적으로 높이값을 알수없을때)  */
-.nav>ul>li::after{content: ""; clear: both; display: block;}
+/* .nav>ul>li::after{content: ""; clear: both; display: block;} */
 /* 메뉴 타이틀 크기 지정 */
-.nav>ul>li{text-align: center; width: 150px; float: left; position: relative; margin-left: 5px;}
+/* .nav>ul>li{text-align: center; width: 150px; float: left; position: relative; margin-left: 5px;} */
 /* 타이틀내의 a테그 크기 지정 */
-.nav>ul>li>a{display: block; padding: 10px 20px; }
+/* .nav>ul>li>a{display: block; padding: 10px 20px; } */
 
 /* 타이틀 호버시의 css변경 */
 /* 타이틀 자체 크기 */
-.nav>ul>li:hover>a{color: #fff; }
+/* .nav>ul>li:hover>a{color: #fff; } */
 

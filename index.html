@@ -31,41 +31,42 @@
         }
 
         /* 위로가기 버튼 */
-        .toTop{
+        .toTop {
             display: block;
             text-align: center;
             line-height: 150%;
-            width:50px;
+            width: 50px;
             height: 50px;
             /* border: 1px solid black; */
             position: fixed;
             bottom: 110px;
             right: 50px;
         }
-        .toTop a img{
+
+        .toTop a img {
             transform: rotate(270deg);
             width: 100%;
             height: 100%;
         }
 
         /* 제일밑으로 가기 버튼 */
-        .toBottom{
+        .toBottom {
             display: block;
             text-align: center;
             line-height: 150%;
-            width:50px;
+            width: 50px;
             height: 50px;
             /* border: 1px solid black; */
             position: fixed;
             bottom: 50px;
             right: 50px;
         }
-        .toBottom a img{
+
+        .toBottom a img {
             transform: rotate(90deg);
             width: 100%;
             height: 100%;
         }
-
     </style>
 </head>
 
@@ -75,10 +76,12 @@
         <h2>Web Standard</h2>
         <h4>21년12월20일</h4>
         <div>
-            <span class="toTop"><a href="#"><img src="./01_Web_Standard/ex07/images/arrow_right.png" alt="위로"></a></span>
+            <span class="toTop"><a href="#"><img src="./01_Web_Standard/ex07/images/arrow_right.png"
+                        alt="위로"></a></span>
         </div>
         <div>
-            <span class="toBottom"><a href="#bottom"><img src="./01_Web_Standard/ex07/images/arrow_right.png" alt="위로"></a></span>
+            <span class="toBottom"><a href="#bottom"><img src="./01_Web_Standard/ex07/images/arrow_right.png"
+                        alt="위로"></a></span>
         </div>
         <ul>
             <li><a href="01_Web_Standard/ex02/unit02_01.html">h요소, p, br, 블록요소, 인라인 요소</a></li>
@@ -353,7 +356,7 @@
             <li><a href="01_Web_Standard/ex09/unit05_01.html">로그인 폼 문서 작성</a></li>
             <li>폼 테그를 사용하여 로그인홈페이지를 작성해 보았다.</li>
             <li>ex) form id="loginForm" action="#" method="post" name="form1" 로 테그작성되며 <br>
-            action은 데이터를 넘겨줄곳, 메소드는 데이터 전송방식 등을 나타낸다.</li>
+                action은 데이터를 넘겨줄곳, 메소드는 데이터 전송방식 등을 나타낸다.</li>
             <li><a href="01_Web_Standard/ex09/unit06_01.html">미디어쿼리를 이용한 반응형 웹 예제</a></li>
             <li>미디어쿼리를 이용하여 화면넓이에 따라 반응하는 웹의 기초를 배웠다.</li>
             <li>ex)@media screen and (조건문){}</li>
@@ -372,8 +375,72 @@
             <li>이 예제를 통해 html구조설계의 중요성 및 클래스의 2중네이밍 등을 알게되었다.</li>
             <li>또한, 수업 시작후 처음으로 js 메소드인 onmouseover 와 onmouseout을 보게됐다.</li>
         </ul>
+        <hr><br>
+        <h4>22년1월7일</h4>
+        <ul>
+            <li><a href="./02_HTML5_CSS3/ex_03_em_rem_vw_vh/index.html">px, em, rem, vw, vh 비교예제</a></li>
+            <li>px단위는 사실 잘 안쓰인다. <br>
+                em의 기본단위는 부모의 사이즈를 따라간다.(ex: body가 부모고 12px를 선언하면 em=12px단위가 된다.) <br>
+                rem은 :root값을 따르며, root는 문서의 기본값으로 쓰인다.(ex: :root에서 선언한 xp단위가 1rem이 된다.) <br>
+                viewport에 대응해서 크기를 지정하는 방법에는 'vw, vh, vmin, vmax' 등이 있다. <br>
+                1vw = 뷰포트의 폭의 1% / 1vh = 뷰포트의 노이의 1% / 1vmin = 1vw 또는 1vh중 가장 작은값을 기준으로 적용.
+            </li>
+            <li><a href="./02_HTML5_CSS3/ex_04_Display/boxsizing.html">박스사이징 예제</a></li>
+            <li>박스사이징에 대한 쓰임새 예제.</li>
+            <li><a href="./02_HTML5_CSS3/ex_04_Display/index.html">display속성에 대한 예시들</a></li>
+            <li>display에 대표적으로 적용되는 block요소와 inline요소에 대해 살펴보았다. <br>
+                block의 경우는 선언할 경우, 해당요소가 인라인일경우 블록요소로 바꿔주고, <br>
+                inline은 블록요소를 인라인요소로 변경하여준다. 이외에도 inline-block 요소가 존재한다. <br>
+                inline-block은 인라인 모습은 그대로 가져가되, 그 안에서 블록요소처럼 활동할수 있게 해준다.(아마?)
+            </li>
+            <li><a href="./02_HTML5_CSS3/ex_04_Display/index1.html">visibility와 unvisibility</a></li>
+            <li>요소를 안보이게 하는 3가지 방법을 보았다.</li>
+            <li>visibility: hidden;의 경우는 그 형태는 남기지만 화면에 안보이는 효과. <br>
+                opacity: .n;은 형태도 남기고 투명도 조절도 가능. <br>
+                display: none; 의 경우는 형태까지 사라지게 하는 역할.
+            </li>
+            <li><a href="./02_HTML5_CSS3/ex_05_Position/index.html">포지셔닝에 대한 이해를 위한 예제1.</a></li>
+            <li>부모요소에 대한 포지셔닝이 중요함을 알게된 예제.</li>
+            <li><a href="./02_HTML5_CSS3/ex_05_Position/index1.html">포지셔닝에 대한 이해를 위한 예제2.</a></li>
+            <li>position: absolute; top: 0; left: 50%; transform: translateX(-50%);를 사용하여 absolute 일때의 중앙정렬방법을 배웠다.
+            </li>
+            <li><a href="./02_HTML5_CSS3/ex_05_Position/index2.html">포지셔닝에 대한 이해를 위한 예제3.</a></li>
+            <li>relative로 포지셔닝 기준점을 잡고 그 안의 자식요소를 absolute를 사용하여 포지셔닝하는법을 배웠다.</li>
+            <li><a href="./02_HTML5_CSS3/ex_09_horizontal_vertical/index.html">Horizontal & Vertical Centering</a></li>
+            <li>수평정렬, 수직정렬 등에 대해 탐구하였고, flex에 대해서 배웠지만 아직 개념이 애매하다.</li>
+            <li><a href="./02_HTML5_CSS3/ex_10_image_padding/index.html">img에 대해서</a></li>
+            <li>image요소는 inline요소이며, 텍스트로 취급된다. ?타이포그래피? </li>
+        </ul>
+        <hr><br>
+        <h4>22년1월10일</h4>
+        <ul>
+            <li><a href="./02_HTML5_CSS3/ex_12_Relative_Test/index.html">top메뉴바 예제1</a></li>
+            <li>내용자체는 사실 새로운것은 없다. 다만 배운것을 종합하여 사용하기엔 아직 서툰느낌이었다. <br>
+                기본적인 내용은 전에 진행했던 포지셔닝에 대해서 알고있다면 충분히 이해할수 있다. <br>
+                (부모요소의 포지셔닝을 relative로 잡고 자식요소를 absolute로 세부적으로 잡아는 예제 참조.)
+            </li>
+            <li><a href="./02_HTML5_CSS3/ex_12_Relative_Test/index1.html">메뉴바에 대한 미세팁</a></li>
+            <li>메뉴탭에 hover시 강조효과로 해당탭에만 보더가 살짝 나오는데 이를 잘못 설정하면 hover될때마다 들쓱거리는 현상을보게된다. <br>
+                이의 해결법으로 미리 padding값을 주고 나서 hover가상선택자로 padding값을 조절하여 border의 두깨size를 주는걸로 할수있다.
+            </li>
+            <li><a href="./02_HTML5_CSS3/ex_12_Relative_Test/index3.html">top메뉴바 예제2</a></li>
+            <li>진짜 처음볼때 너무 어려웠던 부분이었다. 하지만, css를 차근차근보면 모르는내용은 없다. <br>
+                아마, 머릿속에 html구조를 생각하며 css를 처음 짜보기 시작해서 어려워서 그런듯 하다.
+            </li>
+        </ul>
+        <hr><br>
+        <h4>22년1월11일</h4>
+        <ul>
+            <li><a href="./02_HTML5_CSS3/ex_12_Relative_Test/index4.html">top메뉴바 예제3</a></li>
+            <li>2deps 반응형 탑메뉴 예제이다. css 내용자체는 전의 내용과 크게 다르지는 않다. <br>
+                다만, 2deps를 개발하면서 html의 구조가 복잡해지고, 덩달아 css지정하는것에도 헷갈리는 경우가 잦았다.
+            </li>
+            <li><a href="./02_HTML5_CSS3/ex_12_Relative_Test/index5.html">top메뉴바 예제4</a></li>
+            <li>2deps 반응형 탑메뉴 예제이다. 여기에서는 이제 혼란스러웠던 전 보다는 이제 어떻게 시작해야될지를 조금씩 감을 잡기 시작한거같다.</li>
+        </ul>
     </div>
     <!-- 하단으로 이동을 위한 테그 -->
     <div id="bottom"></div>
 </body>
+
 </html>

@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* 초기화 */
+*{padding: 0; margin: 0;}
+
+body{background: plum;}
+
+#wrap{ margin: 0 auto; width: 1000px; height: 700px;}
+#header{background: rebeccapurple; width: 100%; height: 150px;}
+
+#mainFrame{}
+#aside{background: lightpink; width: 300px; height: 400px; float: left;}
+#banner{background: blueviolet;width: 700px; height: 400px; float: left;}
+
+#footer{background: darkmagenta; width: 100%; height: 150px;clear: both;}  
+
+@media screen and (max-width: 1200px){
+    #wrap{width: 95%;}
+    #aside{width: 30%;}
+    #banner{width: 70%;}
+}
+
+@media screen and (max-width: 800px){
+    #aside{width: 100%; height: 200px;}
+    #banner{width: 100%; height: 200px;}
+}
+
+
+/* 01-14 */

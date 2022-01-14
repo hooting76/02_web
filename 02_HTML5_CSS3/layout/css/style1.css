@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+
+*{margin: 0; padding: 0;}
+
+body{background: lightgreen;}
+
+#wrap{width: 100%; height: 100%;}
+header{background: lime; width: 100%; height: 150px;}
+aside{background: teal;width: 30%; height: 400px; float: left;}
+section{background: yellowgreen; width: 40%; height: 400px; float: left;}
+article{background:green; width: 30%; height: 400px; float: left;}
+footer{background: springgreen; width: 100%; height: 150px; clear: both;}
+
+@media screen and (max-width:1200px){
+
+    aside{ width: 30%; }
+    section{ width: 70%; }
+    article{ clear: both; width: 100%; height: 300px;}
+}
+
+@media screen and (max-width:760px){
+
+    aside{ width: 100%; float: none;}
+    section{ width: 100%; float: none;}
+    article{ width: 100%; float: none;}
+}

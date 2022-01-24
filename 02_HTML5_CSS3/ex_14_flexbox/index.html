@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex예제(반응형)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <h1>flex란? 행 열을 자유자젫 배치하는 것</h1>
+        <h2>float은 이미지와 텍스트를 어떻게 배치 할것인지를 나타내는것임</h2>
+        <p>container에 배치하는 것으로</p>
+        <ul>
+            <li>display</li>
+            <li>flex-direction</li>
+            <li>flex-wrap</li>
+            <li>flex-flow</li>
+            <li>justify-content</li>
+            <li>align-items</li>
+            <li>align-content</li>
+        </ul>
+        <h3>display:flex</h3>
+        <div class="container">
+            <ul class="item item1">1</ul>
+            <ul class="item item2">2</ul>
+            <ul class="item item3">3</ul>
+            <ul class="item item4">4</ul>
+            <ul class="item item5">5</ul>
+        </div>
+        <h3>flex-direction, flex-wrap</h3>
+        <p>방향제시, 줄바꿈을 각각 의미</p>
+        <div class="container ex1">
+            <ul class="item item1">1</ul>
+            <ul class="item item2">2</ul>
+            <ul class="item item3">3</ul>
+            <ul class="item item4">4</ul>
+            <ul class="item item5">5</ul>
+        </div>
+        <h3>중심축에서 item 배치하기</h3>
+        <p>justify-content</p>
+        <div class="container ex2">
+            <ul class="item item1">1</ul>
+            <ul class="item item2">2</ul>
+            <ul class="item item3">3</ul>
+            <ul class="item item4">4</ul>
+            <ul class="item item5">5</ul>
+        </div>
+        <h3>반대축에서 item 배치하기</h3>
+        <p>align-items</p>
+        <div class="container ex3">
+            <ul class="item item1">1</ul>
+            <ul class="item item2">2</ul>
+            <ul class="item item3">3</ul>
+            <ul class="item item4">4</ul>
+            <ul class="item item5">5</ul>
+        </div>
+
+        <h3>반대축에서 item 배치하기</h3>
+        <p>align-content</p>
+        <div class="container ex4">
+            <ul class="item item1">1</ul>
+            <ul class="item item2">2</ul>
+            <ul class="item item3">3</ul>
+            <ul class="item item4">4</ul>
+            <ul class="item item5">5</ul>
+            <ul class="item item3">3</ul>
+            <ul class="item item4">4</ul>
+            <ul class="item item5">5</ul>
+            <ul class="item item3">3</ul>
+            <ul class="item item4">4</ul>
+            <ul class="item item5">5</ul>
+        </div>
+
+
+        <p>item에 배치하는것으로</p>
+        <ul>
+            <li>order</li>
+            <li>flex-grow</li>
+            <li>flex-shrink</li>
+            <li>flex-basis</li>
+        </ul>
+
+        <h3>item order</h3>
+        <p>원래는 요소들이 0번으로 기본으로 부여된 상태에서 order로 번호 부여하게 되면 번호 순서대로 정렬하게 된다.</p>
+        <p>예를들어, 첫번째 요소에 1번을 부여하면 1번요소가 3번요소 뒤로 이동하게 된다.</p>
+        <div class="container ex5">
+            <ul class="item item1">1</ul>
+            <ul class="item item2">2</ul>
+            <ul class="item item3">3</ul>
+        </div>
+
+        <h3>flex grow, shrink, basis</h3>
+        <p></p>
+        <div class="container ex6">
+            <ul class="item item1">1</ul>
+            <ul class="item item2">2</ul>
+            <ul class="item item3">3</ul>
+        </div>
+    </div>
+</body>
+</html>
+<!-- 1/24 -->

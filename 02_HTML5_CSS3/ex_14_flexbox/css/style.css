@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+
+body{background: lightgreen;}
+#wrap{width: 1000px; margin: 50px auto; background: wheat; padding: 30px;}
+.container{width: 90%; display: flex; background: turquoise; margin: 20px 0;}
+.item{width: 50px; height: 50px; }
+.item1{background: violet; }
+.item2{background: blue; }
+.item3{background: rosybrown; }
+.item4{background: aliceblue; }
+.item5{background: yellow; }
+
+/* 기본값은 row임 */
+.ex1{width: 100%; flex-flow: row wrap;
+    /*flex-direction: row;  flex-wrap: wrap;*/}
+.ex1 .item{width: 300px; height: 50px; }
+
+@media screen and (max-width: 1200px) {
+    #wrap{width: 100%;}
+}
+
+
+.ex2{justify-content: left;}
+.ex2{justify-content: center;}
+.ex2{justify-content: right;}
+
+/* left와 동일함 */
+.ex2{justify-content: flex-start;}
+/* right와 동일함 */
+.ex2{justify-content: flex-end;}
+
+.ex2{justify-content: space-between;}
+.ex2{justify-content: space-around;}
+.ex2{justify-content: space-evenly;}
+
+
+.ex3{height: 300px; align-items: center;}
+
+
+/* align-items: baseline; */
+.ex4{height: auto; align-content: space-between; align-items: center; flex-direction: column;}
+.ex4 .item1{background: violet; }
+.ex4 .item2{background: blue; }
+.ex4 .item3{background: rosybrown; padding: 30px;}
+.ex4 .item4{background: aliceblue; }
+.ex4 .item5{background: yellow; padding: 20px; }
+
+.ex5 .item1{order: 1;}
+
+.ex6 .item1{flex-grow: 0; flex-shrink: 1; flex-basis:50%;}
+.ex6 .item2{flex-grow: 2; flex-shrink: 2; flex-basis:auto;}
+.ex6 .item3{flex-grow: 3; flex-shrink: 3; flex-basis:auto;}
+
+.ex6 .item1{flex: 1 1 auto;}
+.ex6 .item2{flex: 1 1 auto;}
+.ex6 .item3{flex: 0 1 30%;}

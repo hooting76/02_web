@@ -7,66 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web일기장</title>
     <style>
-        li {
-            margin: 0 auto;
-            padding: 5px 0px;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
 
-        #box {
-            width: 800px;
-            margin: 30px auto;
-            background: snow;
-            padding: 30px 30px;
-            border: 3px solid black;
-            border-radius: 10px;
-        }
-
-        dt {
-            margin: 0 auto;
-            padding: 5px 0px;
-        }
-
-        body {
-            background: lightslategrey;
-        }
+        li {margin: 0 auto; padding: 5px 0px;}
+        #box {width: 800px; margin: 30px auto; background: snow; padding: 30px 30px; border: 3px solid black; border-radius: 10px;}
+        dt {margin: 0 auto; padding: 5px 0px;}
+        body {background: lightslategrey; font-family: 'Noto Sans KR', sans-serif;}
+        a{color: lightskyblue;}
+        a:visited{color: lightskyblue; text-decoration: none;}
 
         /* 위로가기 버튼 */
-        .toTop {
-            display: block;
-            text-align: center;
-            line-height: 150%;
-            width: 50px;
-            height: 50px;
-            /* border: 1px solid black; */
-            position: fixed;
-            bottom: 110px;
-            right: 50px;
-        }
-
-        .toTop a img {
-            transform: rotate(270deg);
-            width: 100%;
-            height: 100%;
-        }
+        .toTop {display: block; text-align: center; line-height: 150%; width: 50px; height: 50px; position: fixed; bottom: 110px; right: 50px;}
+        .toTop a img { transform: rotate(270deg) ;width: 100%; height: 100%;}
 
         /* 제일밑으로 가기 버튼 */
-        .toBottom {
-            display: block;
-            text-align: center;
-            line-height: 150%;
-            width: 50px;
-            height: 50px;
-            /* border: 1px solid black; */
-            position: fixed;
-            bottom: 50px;
-            right: 50px;
-        }
+        .toBottom {display: block; text-align: center; line-height: 150%; width: 50px; height: 50px; position: fixed; bottom: 50px; right: 50px;}
+        .toBottom a img {transform: rotate(90deg);width: 100%;height: 100%;}
 
-        .toBottom a img {
-            transform: rotate(90deg);
-            width: 100%;
-            height: 100%;
-        }
     </style>
 </head>
 
@@ -76,19 +33,16 @@
         <h2>Web Standard</h2>
         <h4>21년12월20일</h4>
         <div>
-            <span class="toTop"><a href="#"><img src="./01_Web_Standard/ex07/images/arrow_right.png"
-                        alt="위로"></a></span>
+            <span class="toTop"><a href="#"><img src="./01_Web_Standard/ex07/images/arrow_right.png"alt="위로"></a></span>
         </div>
         <div>
-            <span class="toBottom"><a href="#bottom"><img src="./01_Web_Standard/ex07/images/arrow_right.png"
-                        alt="위로"></a></span>
+            <span class="toBottom"><a href="#bottom"><img src="./01_Web_Standard/ex07/images/arrow_right.png"alt="위로"></a></span>
         </div>
         <ul>
             <li><a href="01_Web_Standard/ex02/unit02_01.html">h요소, p, br, 블록요소, 인라인 요소</a></li>
             <li><a href="01_Web_Standard/ex02/unit02_02.html">Entity코드</a></li>
             <li><a href="01_Web_Standard/ex02/unit03_01.html">abbr(약어), address(주소), blockquote(인용문).</a></li>
-            <li><a href="01_Web_Standard/ex02/unit03_02.html"> progress, mark, span, meter, ruby, label, rt, summary,
-                    details등의 예제</a></li>
+            <li><a href="01_Web_Standard/ex02/unit03_02.html"> progress, mark, span, meter, ruby, label, rt, summary, details등의 예제</a></li>
             <li><a href="01_Web_Standard/ex02/unit04_01.html"> ol, ul, li 활용예제 </a></li>
             <li><a href="01_Web_Standard/ex02/unit04_02.html"> dl dd dt 활용예제 </a></li>
         </ul>
@@ -437,6 +391,86 @@
             </li>
             <li><a href="./02_HTML5_CSS3/ex_12_Relative_Test/index5.html">top메뉴바 예제4</a></li>
             <li>2deps 반응형 탑메뉴 예제이다. 여기에서는 이제 혼란스러웠던 전 보다는 이제 어떻게 시작해야될지를 조금씩 감을 잡기 시작한거같다.</li>
+        </ul>
+        <hr><br>
+        <h4>22년1월12일</h4>
+        <ul>
+            <li><a href="./02_HTML5_CSS3/ex_13_Gnb_Menu/">실전형 메뉴바 만들기 예제(2depth)</a></li>
+            <li>이 예제에서는 스프라이트 이미지를 활용한 아이콘 삽입을 했었다. <br>
+                 background-position 을 활용하여서 스프라이트 이미지 좌표를 움직이며 알맞은 위치에 알맞은 이미지를 넣도록 하였다</li>
+            <li><a href="./03_project/menu100_water/index.html">수자원공사 예시</a></li>
+            <li>클리어픽스(cf란 것을 확인하였다) -> cf{*zoom:1;} 이후 after 가상선택자로 clear:both해줘서 정렬하는데 도움을 준다.</li>
+            <li>더불어서 트랜지션에 대해서 아직도 이해를 못하겠다....</li>
+        </ul>
+        <hr><br>
+        <h4>22년1월13일</h4>
+        <ul>
+            <li><a href="./03_project/menu100_redpen/index.html">실전형 메뉴바 만들기 예제(2depth)</a></li>
+            <li>내용자체는 어제보다는 쉬운편이었지만, depth의 내용이 많아 다소 헷갈리는점이 많았다. </li>
+            <li>ir_pm / ir_wa / ir_so 등의 IR효과등을 볼수있었다.</li>
+            <li>ir_pm은 의미있는 이미지의 대체 텍스트를 제공하는 경우 사용. <br>
+                {display:block; overflow:hidden; font-size:0; line-height:0; text-indent:-999px;}</li>
+            <li>ir_wa은 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대ㅔ 텍스트를 보여주고자 할 때 사용.<br>
+                {display:block; overflow:hidden; position:relative; z-index:-1; width:100%; height:100%;}</li>
+            <li>ir_so 는 대체텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할때 사용한다. <br>
+                {overflow:hidden; position:absolute; width:0; height:0; line-height:0; text0indent:-9999px}</li>
+        </ul>
+        <hr><br>
+        <h4>22년1월14일</h4>
+        <ul>
+            <li><a href="./02_HTML5_CSS3/layout/index.html">반응형 레이아웃 예제</a></li>
+            <li>width길이에 따라 반응하여 레이아웃이 움직일수 있도록 하는 @media를 활용해 보았다.</li>
+        </ul>
+        <hr><br>
+        <h4>22년1월17일(클론코딩)</h4>
+        <ul>
+            <li><a href="https://github.com/hooting76/publishingProject/commit/be8820ebd56a99fcf3cd13d86faae9bb6be64993">소방청 클론코딩 시작</a></li>
+            <li>상단 메뉴바를 만들고 로고삽입 까지 이루어졌다. + 2depth 를 만들기 위한 준비</li>
+        </ul>
+        <hr><br>
+        <h4>22년1월18일</h4>
+        <ul>
+            <li>백신접종 이후 증세로 휴식</li>
+        </ul>
+        <hr><br>
+        <h4>22년1월19일(클론코딩)</h4>
+        <ul>
+            <li><a href="https://github.com/hooting76/publishingProject/commit/a43d9f3419672938163e489d0150cd1062faa560">2depth제작중</a></li>
+            <li>2depth제작을 위해서 html 작업이 주로 이루어졌다. css작업은 아마 내일부터? 일듯하다.</li>
+        </ul>
+        <hr><br>
+        <h4>22년1월20일(클론코딩)</h4>
+        <ul>
+            <li><a href="https://github.com/hooting76/publishingProject/commit/f85dc975444d4996e0a499d034d37106e22b1273">2depth 수정중 및 검색바 제작</a></li>
+            <li>어제 만든 html 2depth에 구조적 문제가 있는걸 확인하고 전면 재수정을 시작하였다. 더불어 검색바 까지 제작했다.</li>
+        </ul>
+        <hr><br>
+        <h4>22년1월21일(클론코딩)</h4>
+        <ul>
+            <li><a href="https://github.com/hooting76/publishingProject/commit/8cea3dee95a32e614840f2e07351044b1193a2d2">2depth 레이아웃 수정완료 및 배너제작 준비</a></li>
+            <li>어제 수정된 2depth 구조를 확인하고 css 마무리 작업을 진행하였다. 더불어 배너 제작 관련한 아이디어를 구글링 하면서 하루가 마무리 됐다.</li>
+        </ul>
+        <hr><br>
+        <h4>22년1월24일(클론코딩) + 플렉스 예제</h4>
+        <ul>
+            <li><a href="https://github.com/hooting76/publishingProject/commit/6a92a16a1f46f837c6fe4a023f1c33ede918b31c">배너가 움직인다?!</a></li>
+            <li>배너를 힘겹게 제작하고 브라우저를 확대 축소해보니 확대할때 오른쪽으로 이탈하는것을 목격. 이를 수정할 방법을 모색하였다.</li>
+            <li><a href="02_HTML5_CSS3/ex_14_flexbox/index.html">플렉스 예제(반응형 웹 만들때 사용)</a></li>
+            <li>플렉스는 행과 열을 자유자제로 배치하는것을 의미한다. float은 이미지와 텍스트를 어떻게 배치할것인지를 나타내는것이다.</li>
+            <li>자세한 내용은 css파일을 보는것을 권장.(내용이 좀 있음.)</li>
+        </ul>
+        <hr><br>
+        <h4>22년1월25일(클론코딩) + 플렉스를 사용한 사이트 예시 및 약간의 js</h4>
+        <ul>
+            <li><a href="https://github.com/hooting76/publishingProject/commit/d7db15a30f9852e8cec1886f14d68ae30ab358a8">고쳤다! + 공지사항배너 작업중</a></li>
+            <li>이전 배너 방식이 이미지를 먼저 다 불러오고 마진값을 조절하면서 슬라이드 효과를 주는것이었는데, <br>
+                 이를 전면 수정하고 반응에 따라 이미지 display값을 block을 주거나 none을 주거나 하는 방식으로 수정했다. <br>
+                 그럼에도 수정이 되지않자 이것저것 확인해보니 overflow속성이 문제였고, 이를 지우고 해결했다. <br>
+                 이후 공지사항 영역 작업을 시작했다.
+            </li>
+            <li><a href="02_HTML5_CSS3/ex_14_flexbox/project_youtube/index.html">유튜브사이트 예제(플렉스)</a></li>
+            <li>:root를 활용하여서 색상, 폰트크기, 패딩값을 정의할수있다는것을 알았고, 어썸폰트를 활용하여서 아이콘을 넣는법도 알게되었다.</li>
+            <li>더불어 js작성하면서 const는 변하지않는 변수를 저장할때 사용한다는것과 쿼리셀렉터, 에드이벤트리스너 등도 살짝 맛만 보았다. 문법이 아직은 좀 낯설어서 눈에 익히는 시간이 길것같다.</li>
         </ul>
     </div>
     <!-- 하단으로 이동을 위한 테그 -->

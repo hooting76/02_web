@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox디자인</title>
+    <style>
+        ul{list-style: none;}
+        .agree{margin-top: 100px; margin-left: 100px;}
+        ul li{margin-bottom: 15px; position: relative;}
+        ul li:after{content: ""; display: block; clear: both;}
+        ul li input[type="checkbox"]{display: none;} 
+        ul li input[type="checkbox"] + label{width: 17px; height: 17px; background: #fa3062; cursor: pointer; border-radius: 3px; float: left;}
+        ul li input[type="checkbox"]:checked + label{background: url(./img/asdfqwe9.png) no-repeat center center #fa3062; float: left;}
+        ul li input[type="checkbox"] + label span{position: absolute; display: block; left: 20px; top:-3px}
+
+        ul li input[type="radio"]{display: none;} 
+        ul li input[type="radio"] + label{width: 17px; height: 17px; background: #222; cursor: pointer; border-radius: 50%; float: left; border: 1px solid #ccc;}
+        ul li input[type="radio"] + label{background: url(./img/asdfqwe9.png) no-repeat center center #222; float: left;}
+        ul li input[type="radio"] + label span{position: absolute; display: block; left: 20px; top:-3px}
+    </style>
+</head>
+<body>
+    <form class="agree" action="#" method="post">
+        <ul>
+            <li>
+                <input type="checkbox" id="a1" name="전체동의" checked>
+                <label for="a1"><span>이용약관동의(필수)</span></label>
+            </li>
+            <li>
+                <input type="checkbox" id="a2" name="전체동의">
+                <label for="a2"><span>개인정보수집이용 동의(필수)</span></label>
+            </li>
+            <li>
+                <input type="radio" id="a3" name="전체동의" >
+                <label for="a3"><span>개인정보수집이용 동의(필수)</span></label>
+            </li>
+            <!-- zoom은 크롬에서만 가능 파폭x-->
+            <input type="checkbox" id="a4" style="zoom:2;">
+            <label for="a4">체크박스 크기 조절</label>
+        </ul>
+    </form>
+</body>
+</html>

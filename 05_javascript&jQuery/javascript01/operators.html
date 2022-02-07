@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operators(연산자)</title>
+    <script src="./js/operators.js" defer></script>
+</head>
+<body>
+    <script>
+        //-----------------------(44p)-----------------------------------------
+        // let num1 = 15;
+        // let num2 = 2;
+        // let result;
+
+        // result = num1 + num2; //17
+        // document.write(result,"<br>"); //17
+
+        // result = num1 - num2; //13
+        // document.write(result,"<br>"); //13
+
+        // result = num1 * num2; //30
+        // document.write(result,"<br>"); //30
+
+        // result = num1 / num2; //7.5
+        // document.write(result,"<br>"); //7.5
+
+        // result = num1 % num2; //1
+        // document.write(result,"<br>"); //1
+
+        // result = num1**num2; //225
+        // document.write(result,"<br>"); //225
+
+        //---------------------------(45p)---------------------------------------
+
+        // let t1 = "빙빙 ";
+        // let t2 = "돌아가는 ";
+        // let t3 = "회전";
+        // let t4 = "목마처럼~";
+        // let result;
+
+        // result = t1 + t2+ t3+ t4;
+        // document.write(result); //빙빙 돌아가는 회전목마처럼~
+
+        //---------------------------(47p)---------------------------------------
+
+        // let str = "<table border='1'>";
+
+        //     str += "<tr>";
+        //     str += "<td>1</td><td>2</td><td>3</td>";
+        //     str += "</tr>";
+        //     str += "</table>";
+
+        //     document.write(str); //테이블이 형성됨. 
+        
+        //---------------------------(48p ~ 49p)---------------------------------------
+        // let num1 = 10;
+        // let num2 = 20;
+
+        // let result;
+
+        // num1--; //9
+        // document.write(num1,"<br>"); //9
+
+        // num1++; //10
+        // document.write(num1,"<br>"); //10
+
+        // result = num2++; // result: 20 / num2: 21
+        // document.write(result,"<br>"); //20
+        
+        // result = ++num2; //result: 22 / num2: 22
+        // document.write(result,"<br>"); //22
+
+        //---------------------------(51p)---------------------------------------
+
+        // let a = 10;
+        // let b = 20;
+        // let c = 10;
+        // let f= "20";
+
+        // let result;
+
+        // result = a>b; //false
+        // document.write(result,"<br>"); //false
+
+        // result = a<b; //true
+        // document.write(result,"<br>"); //true
+
+        // result = a<=b; //true
+        // document.write(result,"<br>"); //true
+
+        // result = b==f; //true
+        // document.write(result,"<br>"); //true
+
+        // result = a!=b; //true <- a와 b는 같지 않다 라고 표현. !은 부정의 표시
+        // document.write(result,"<br>"); //true
+
+        // result = b===f; //false
+        // document.write(result,"<br>"); //false <- 문자열과 숫자의 비교이므로 false가 맞다.
+
+        //---------------------------(53p)---------------------------------------
+
+        // let a=10;
+        // let b=20;
+        // let m=30;
+        // let n=40;
+
+        // let result;
+        // result = a > b || b>=m || m>n; //false || false || false
+        // document.write(result,"<br>"); //false
+
+        // result = a >b || b>=m || m<=n; // false || false || true
+        // document.write(result,"<br>"); // true
+
+        // result = a<=b && b>=m && m<=n// true && false && true <- false 나온순간부터 연산은 종료!
+        // document.write(result,"<br>"); // false
+
+        // result = a<=b && b<=m && m<=n; //true && true && true
+        // document.write(result,"<br>"); //true
+
+        // result = !(a>b); // false의 부정 = true
+        // document.write(result,"<br>"); // true
+
+        // let a =10;
+        // let b = 3;
+
+        // let result = a >b ? "javascript(true값)":"hello(false값)"; // a > b 의 연산이 참이면 ? 다음의 첫 조건답이. 거짓이면 2번째 조건답이 나온다.
+        // document.write(result,"<br>"); //javascript(true값)
+
+        // let userHeight = 170;
+        // let userWeight = 67;
+
+        // let normal_w = (userHeight -100) *0.9;
+        // document.write(normal_w,"<br>");
+
+        // let name = prompt("당신의 이름은?", "");
+        // let height = prompt("당신의 신장은?", "0");
+        // let weight = prompt("당신의 몸무게는?", "0");
+
+        // let normal_w = (height -100) *0.9;  //평균체중
+        // let result = weight>=normal_w -5 && weight<=normal_w+5 //오차범위
+
+        // result = result ?"적정 체중입니다." : "적정 체중이 아닙니다.";
+        // document.write(name+"님은"+result);
+
+        //58p 1번
+        // let price1 = 3000;
+        // let price2 = 6000;
+        // let price3 = 3000;
+
+        // let total = price1 + price2 + price3;
+        // let result = total>10000 ? `${total -10000} 원 초과! 비이이이이이사아아아아아앙!!!`: `돈 관리 잘했어용!`
+
+        // document.write(result,"<br>");
+
+        //58p 2번
+        let q1 = 1200;
+        let q2 = 1300;
+        let q3 = 1000;
+
+        let q4 = prompt("4분기 판매량은?","");
+
+        let qEver = (q1 + q2 + q3)/3;
+        
+        let result = q4>= qEver ? "판매량이 평균 이상입니다." : "판매량이 평균 미만입니다."
+
+        document.write(result,"<br>");
+
+    </script>
+</body>
+</html>

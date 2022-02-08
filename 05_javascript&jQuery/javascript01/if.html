@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/if.js" defer></script>
+    <title>if문 예제</title>
+</head>
+<body>
+    <script>
+        // ------------------------62p--------------------------------
+        // let walkAmount = prompt("당신은 하루에 몇보 걸으십니까.","");
+
+        // if(walkAmount>=10000){
+        //     document.write("매우 건강한 습관을 가지고 계시군요!","<br>");
+        // }else{
+        //     document.write("좀 더 걸으셔야 겠습니다!","<br>");
+        // }
+        // document.write("================END===============");
+
+        // ------------------------------64p-----------------------------
+
+        // var userName=prompt("방문자의 이름은?","");
+        // if(userName){
+        //     document.write(`${userName} 님 반갑습니다.`);
+        // }
+        // --------------------------------65p---------------------------
+
+        // var num = prompt("당신이 좋아하는 숫자는?", "");
+
+        // if(num % 2 ==0){
+        //     document.write("당신이 좋아하는 숫자는 짝수 입니다.");
+        // }else{
+        //     document.write("당신이 좋아하는 숫자는 홀수 입니다.");
+        // }
+        // ---------------------------------67p------------------------
+
+        // var result = confirm("정말 회원을 탈퇴 하시겠습니까?");
+
+        // if(result){
+        //     document.write("탈퇴 처리되었습니다.");
+        // }else{
+        //     document.write("탈퇴 취소가 되었습니다.");
+        // }
+        // ---------------------------------69p---------------------------
+
+        // var mon = prompt("지금은 몇월입니까.","");
+
+        // if(mon>=9 &&mon<=11){
+        //     document.write("독서의 계절인 가을이네요!");
+        // }else if(mon>=6 &&mon<=8){
+        //     document.write("수박이 생각나는 여름이네요!");
+        // }else if(mon>=3 &&mon<=5){
+        //     document.write("싱그러운 봄이네요!");
+        // }else{
+        //     document.write("하얀 눈이 내리는 겨울이네요!");
+        // }
+        // -----------------------------------70p-------------------------
+
+        // var id = "ckdgns1120";
+        // var pw = "ckd5184"
+
+        // var user_id = prompt("아이디를 입력하세요.","");
+        // var user_pw = prompt("비밀번호를 입력하세요.","");
+
+        // if(user_id==id){
+        //     if(user_pw==pw){
+        //         // 템프럴 리터럴방식: ``
+        //         document.write(`${user_id} 님 반갑습니다!`);
+        //     }else{
+        //         alert("비밀번호가 일치하지않습니다.");
+        //         location.reload();
+        //     }
+        // }else{
+        //     alert("아이디가 일치하지않습니다.");
+        //     location.reload();
+        // }
+
+        // 번외 예제1
+        // let user_point = prompt("당신의 gtq점수는 몇점입니까","");
+
+        // if(user_point>=70){
+        //     document.write("축하합니다! 합격입니다!");
+        // }else{
+        //     document.write("아쉽게도 불합격 입니다! ㅠ");
+        // }
+
+        //번외 예제2
+        // let user_age = prompt("당신의 나이는 몇세 입니까.","");
+
+        // if(20<=user_age && user_age<30){
+        //     document.write("당신은 20대 입니다!(통과!)");
+        // }else{
+        //     document.write("20대가 아니시군요!(불통!)");
+        // }
+
+        // --------------------------73p---------------------
+
+        var site = prompt("네이버, 다음, 네이트, 구글중 즐겨사용하는 포털 검색 사이트는?","");
+
+        var url;
+
+        switch(site){
+            case"구글":url="www.google.com";
+            break;
+            case"네이버":url="www.naver.com";
+            break;
+            case"다음":url="www.daum.net";
+            break;
+            case"네이트":url="www.nate.com";
+            break;
+            default: alert("보기중에 없는 사이트 입니다.")
+        }
+
+        if(url){
+            location.href = "http://"+url;
+        }
+    </script>
+</body>
+</html>

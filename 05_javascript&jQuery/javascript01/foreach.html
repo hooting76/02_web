@@ -24,17 +24,38 @@
     <ul id="dowhile"></ul>
     <hr>
     <script>
-        var fruit =["apple", "banana", "orange"];
+        var fruits =["apple", "banana", "orange"];
 
         //for
-        for(var i=0;i<fruit.length; i++){
-            document.getElementById('for').innerHTML +='<li>'+fruit[i]+'</li>';
+        for(var i=0;i<fruits.length; i++){
+            document.getElementById('for').innerHTML +='<li>'+fruits[i]+'</li>';
         }
 
         // forEach
-        fruit.forEach(function(el, index){
-            document.getElementById('forEach').innerHTML +='<li>'+fruit[i]+'</li>';
+        fruits.forEach(function(item,index){
+            // document.getElementById('forEach').innerHTML +='<li>'+fruits[index]+'</li>';
+            document.getElementById('forEach').innerHTML +='<li>'+fruits[index]+'<li>';
         });
+
+        //for of
+        var item;
+        for(item of fruits){
+            document.getElementById('forof').innerHTML +='<li>'+item+'</li>';
+        }
+
+        //for in <- 객체내의 값
+        var person={pname:'jch', page:'28', pgender:'남성'}
+        var x;
+        for(x in person){
+            document.getElementById('forin').innerHTML +='<li>'+person[x]+'</li>';
+        }
+
+        //do/while
+        var y=0;
+        do{
+            document.getElementById('dowhile').innerHTML +='<li>'+fruits[y]+'</li>';
+            y++;
+        }while(y<fruits.length);
     </script>
 </body>
 </html>

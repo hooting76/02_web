@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동해안 겔러리</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        li{list-style: none;}
+        a{text-decoration: none; color: #000;}
+        #galley{width: 350px; margin: 100px auto; border: 5px solid lightslategray; box-shadow: 5px 5px 10px #ccc; text-align: center; }
+        #galley h1{ margin: 10px 0;}
+        #galley #photo img{border: 8px solid #ddd;}
+        #galley #photo_list{width: 300px; overflow: hidden; margin: 10px auto;}
+        #galley #photo_list::after{content: ''; display: block; clear: both;}
+        #galley #photo_list ul{width: 800px; margin: 0 auto; transition: .5s; position: relative; left: 0;}
+        #galley #photo_list ul li{float: left; width: 100px; text-align: center;}
+        #galley #photo_list ul li img{border: 3px solid #ddd;}
+        #galley .btn-wrap{}
+        #galley .btn-wrap a{font-weight: bold;}
+    </style>
+    <script>
+        window.onload=function(){
+            let listZone = document.getElementById('inner_list');
+            let listA = listZone.getElementsByTagName("a");
+
+            for(let i=0; i <listA.length; i++){
+                listA[i].onclick = function(){
+                    let ph=document.getElementById('photo').children[0];
+                    ph.src=this.href;
+                    return false; //하이퍼링크값을 차단
+                }
+            }
+
+            let n_btn=document.getElementById("next-btn");
+            let m_num=0;
+            n_btn.onclick = function(){
+               
+                if(m_num>=listA.length-3){
+                    return false;
+                }
+                m_num++;
+                listZone.style.left= -100*m_num+"px";
+            }
+
+            let b_btn =document.getElementById("before-btn");
+            
+            b_btn.onclick = function(){
+                if(m_num<=0)
+                    return false;
+                    m_num--;
+                    listZone.style.left= -100*m_num+"px";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="galley">
+        <h1>동해안 겔러리</h1>
+        <p id="photo">
+            <img src="./img/pic_1.jpg" width="320" alt="">
+        </p>
+        <div id="photo_list">
+            <ul id="inner_list">
+                <li><a href="./img/pic_1.jpg"><img src="./img/pic_t1.jpg" alt="사진1"></a></li>
+                <li><a href="./img/pic_2.jpg"><img src="./img/pic_t2.jpg" alt="사진2"></a></li>
+                <li><a href="./img/pic_3.jpg"><img src="./img/pic_t3.jpg" alt="사진3"></a></li>
+                <li><a href="./img/pic_4.jpg"><img src="./img/pic_t4.jpg" alt="사진4"></a></li>
+                <li><a href="./img/pic_5.jpg"><img src="./img/pic_t5.jpg" alt="사진5"></a></li>
+                <li><a href="./img/pic_6.jpg"><img src="./img/pic_t6.jpg" alt="사진6"></a></li>
+                <li><a href="./img/pic_7.jpg"><img src="./img/pic_t7.jpg" alt="사진7"></a></li>
+                <li><a href="./img/pic_8.jpg"><img src="./img/pic_t8.jpg" alt="사진8"></a></li>
+            </ul>
+        </div>
+        <p class="btn-wrap">
+            <a href="javascript:" id="before-btn">&lt;</a>
+            <a href="javascript:" id="next-btn">&gt;</a>
+        </p>
+    </div>
+</body>
+</html>

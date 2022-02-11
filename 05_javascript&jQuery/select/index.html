@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+</head>
+<body>
+    <h1 id="title">javascript Basic Selector</h1>
+    <div class="container">
+        <ul id="list1" class="list">
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            <li>item5</li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul id="list2" class="list">
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            <li>item5</li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul id="list3" class="list">
+            <li class="red">item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li id="list3_4">item4</li>
+            <li>item5</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div id="box">
+            <div>box1
+                <div>box2
+                    <div>box3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae quae in quidem pariatur commodi quas quod est itaque quibusdam numquam at fuga porro dolore, nam ullam cumque deleniti adipisci dolores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae quae in quidem pariatur commodi quas quod est itaque quibusdam numquam at fuga porro dolore, nam ullam cumque deleniti adipisci dolores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae quae in quidem pariatur commodi quas quod est itaque quibusdam numquam at fuga porro dolore, nam ullam cumque deleniti adipisci dolores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae quae in quidem pariatur commodi quas quod est itaque quibusdam numquam at fuga porro dolore, nam ullam cumque deleniti adipisci dolores.</p>
+
+    <script>
+        let firstTitle = document.getElementById('title');
+        let myList = document.getElementsByClassName('list');
+        let paragraphs = document.getElementsByTagName("p");
+        let list2 = document.querySelectorAll(".list");
+        console.log(list2);
+
+        // 문서전체를 한번 읽고 나서 효과 부여
+        document.getElementById('title').style.color='red;'
+        // 이미 저장된 변수로 효과부여 <- 이 방법 권장
+        firstTitle.style.color='green';
+
+        // 클래스네임 방식
+        myList[0].style.color='yellow';
+        for(let i=0; i<myList.length; i++){
+            myList[i].style.color='yellow';
+        }
+
+        // 테그네임 방식
+        for(let i1=0; i1<paragraphs.length; i1++){
+            paragraphs[i1].addEventListener("mouseenter", function(){
+                paragraphs[i1].style.color="orange"
+            });
+            paragraphs[i1].addEventListener("mouseleave", function(){
+                paragraphs[i1].style.color="green"
+            });
+        }
+
+        // 쿼리셀렉터
+        
+    </script>
+</body>
+</html>

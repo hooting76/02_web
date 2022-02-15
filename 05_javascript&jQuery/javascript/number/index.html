@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>num_animation</title>
+    <style>
+        .num_animation{width: 100%; padding: 20px; font-size: 3em; margin: 0 auto; border: 5px solid lightgray; text-align: center;}
+    </style>
+</head>
+<body>
+    <div class="num_animation" data-num="100">0</div>
+    <script>
+        let numAnimation = document.querySelector('.num_animation');
+        let num=0;
+        let targetNum = numAnimation.getAttribute('data-num');
+        let timer = setInterval(function(){
+            ++num;
+            numAnimation.innerHTML=num;
+
+            if(num==targetNum){
+                clearInterval(timer);
+            }
+        },10);
+    </script>
+</body>
+</html>

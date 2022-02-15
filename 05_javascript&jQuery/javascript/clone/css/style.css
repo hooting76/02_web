@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+
+.slide_wrapper{position: relative; width: 1120px; height: 200px; background: red; margin: 50px auto; overflow: hidden;}
+.slides{position: absolute; top: 0; left: 0;}
+.slides.animated{transition: .5s ease-in;}
+.slides li{width: 200px; height: 200px; float: left; background: #ddd; list-style: none; text-align: center; line-height: 200px;}
+.slides li:not(:nth-child(5)){margin-right: 30px;}
+
+.controls{text-align: center;}
+.controls span{background: #333; color: #fff; padding: 10px 20px; margin: 0 10px;}

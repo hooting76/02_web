@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js video</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <p>
+        <button id="vplay">video Play</button>
+        <button id="vpause">video pause</button>
+    </p>
+    <div>
+        <video src="video.mp4" id="videoPlay"></video>
+    </div>
+
+    <script>
+        const videoPlay = document.getElementById('videoPlay');
+        document.getElementById('vplay').addEventListener('click', function(){
+            videoPlay.play();
+        });
+
+        document.getElementById('vpause').addEventListener('click', pauseVideo);
+
+        function pauseVideo(){
+            videoPlay.pause();
+        }
+    </script>
+</body>
+</html>

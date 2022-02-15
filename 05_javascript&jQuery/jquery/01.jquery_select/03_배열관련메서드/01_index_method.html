@@ -7,7 +7,22 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<script type="text/javascript">
 		$(function(){
-			
+			// var ulli = $('#list4').css('color','red').index();
+			// console.log(ulli);
+			// alert((ulli+1)+"번째");
+
+			// var d = $('div > em').eq(ulli);
+			// console.log(d);
+			// d.css('color','red')
+
+			var wraps = $('#wrap ul li');
+			wraps.hover(function(){
+				var i = $(this).index();
+				$('div>em').eq(i).css('color','blue');
+			}, function(){
+				var i = $(this).index();
+				$('div>em').eq(i).css('color','black');
+			});
 		});
 	</script>
 </head>
@@ -22,6 +37,14 @@
 			<li>5</li>
 			<li>6</li>
 		</ul>
+		<div>
+			<em>가</em>
+			<em>나</em>
+			<em>다</em>
+			<em>라</em>
+			<em>마</em>
+			<em>바</em>
+		</div>
 	</div>
 </body>
 </html>

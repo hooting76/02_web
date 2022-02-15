@@ -7,7 +7,19 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<script type="text/javascript">
 		$(function(){
-			
+			var obj = [{"area":"서울"}, {"area":"부산"},{"area":"인천"}];
+			$(obj).each(function(i, o){
+				console.log(i+":",o);
+			});
+
+			var menu1=$('#menu1 li');
+			menu1.each(function(){
+				menu1.hover(function(){
+					menu1.css('color',"green");
+				}, function(){
+					menu1.css('color','red');
+				})
+			});
 		});
 	</script>
 </head>

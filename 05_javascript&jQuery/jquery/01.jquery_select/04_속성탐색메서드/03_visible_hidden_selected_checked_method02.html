@@ -7,7 +7,12 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<script type="text/javascript">
 		$(function(){
-			
+			$('#wrap p:hidden').css({"display":"block", "color":"#ff0"});
+			var v = $('#zone1 :selected').val();
+			console.log(v);
+			var c =$('#zone2 :checked').val('영화감상');
+			console.log(c);
+
 		});
 	</script>
 </head>

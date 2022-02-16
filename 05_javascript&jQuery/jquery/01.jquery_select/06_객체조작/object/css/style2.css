@@ -1,0 +1,12 @@
+*{margin: 0; padding: 0;}
+body{background: #ddd;}
+h2{text-align: center;}
+#wrap{width: 1000px; padding: 30px; margin: 0 auto; background: #fff;}
+.addBg{width: 500px; margin: 10px auto; background: lightblue; padding: 30px;}
+p{border: 3px solid blueviolet; margin-bottom: 10px;  padding: 5px;}
+
+.append-appendTo{}
+.append-appendTo .basket{padding: 10px; background-color: aquamarine; }
+.append-appendTo .apple{margin: 5px; background-color: red; padding: 5px;}
+.append-appendTo .banana{margin: 5px; background-color: yellow; padding: 5px;}
+.append-appendTo .orange{margin: 5px; background-color: orange; padding: 5px;}

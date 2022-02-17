@@ -1,0 +1,34 @@
+body{background: #ddd;}
+
+#wrap{width: 1000px; margin: 10px auto; background: #ddd;}
+#div1{display: block;}
+#div2{display: none;}
+
+.width-height>div{background: pink; margin: 0 0 10px; }
+
+.container{font-size: 5em; height: 120px; margin-bottom: 5px;background: skyblue;}
+.container>div{width: 100%; height: 100%; text-align: center; }
+.container>.fadeIn{background: pink; display: none;}
+.container>.fadeOut{background: lightcyan;}
+.container>.fadeTo{background: lightgreen;}
+
+.container>.slideDown{background: rgb(219, 70, 170); display: none;}
+.container>.slideUp{background: rgb(70, 219, 83);}
+
+.animate{width: 100%; height: 700px; background-color: #eee; position: relative; margin-top: 30px;}
+.aniBox{position: absolute; padding: 50px; background: rgb(72, 214, 35); top: 0; left: 0;}
+.aniBox1{position: absolute; padding: 30px; background: rgb(214, 214, 35); top: 0; left: 0;}
+.aniBox2{position: absolute; padding: 30px; background: rgb(65, 123, 13); bottom: 0; right: 0;}
+
+
+.ex{width: 100%; height: 1000px; background-color: #666; margin-top: 30px;}
+#ground{width: 500px; height: 700px; background: green; margin: 30px auto; border: 10px solid #333; position: relative; top: 50px;}
+#stick{width: 20px; height: 200px; top: 650px; left: 50%; transform: translate(-50%);background: brown; position: absolute;}
+.ball{width: 20px; height: 20px; top: 620px; left: 240px; background: #fff; position: absolute;border-radius: 50%;}
+
+#ball01{left: 240px; top: 240px; background: yellow;}
+#ball02{left: 230px; top: 220px; background: purple;}
+#ball03{left: 250px; top: 220px; background: red;}
+#ball04{left: 220px; top: 200px; background: blue;}
+#ball05{left: 240px; top: 200px; background: greenyellow;}
+#ball06{left: 260px; top: 200px; background: black;}

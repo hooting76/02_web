@@ -38,3 +38,113 @@ $('#ball04').delay(1050).animate({top:0, left:100},300).animate({top:70,left:0},
 $('#ball05').delay(1050).animate({top:0,left:250},300).animate({top:30,left:220},300);
 $('#ball06').delay(1050).animate({top:0,left:380},300).animate({top:70,left:400},400);
 $('#ball07').delay(1050).animate({top:250},300).animate({top:260,left:230},400);
+
+//on() 그룹메서드
+$('.clickBtn').on("mouseover focus", function(){
+    $('.buttonBox').text('나 바뀜');
+});
+// $('.clickBtn1').on({"mouseover focus":function(){
+//     $('.buttonBox1').text('집 보내줘....');
+// }});
+$('.clickBtn1').on({"mouseover":function(){
+    $('.buttonBox1').text('나 바뀜1');
+}, "focus":function(){
+    $('.buttonBox1').text('나 바뀜2');
+}});
+
+$('.clickBtn1').on({"mouseout":function(){
+    $('.buttonBox1').text('버튼1로 돌아감');
+}, "blur":function(){
+    $('.buttonBox1').text('나 돌아갈래~');
+}});
+
+
+$('.btn1').click(function(){
+    $('.btn1').parent().next().css("color","red");
+});
+$('.btn2').on({"mouseover focus":function(){
+    $(this).parent().next().css("color","green")
+},"mouseout blur":function(){
+    $(this).parent().next().css("color","blue")
+}});
+
+//triger
+$('.btn3').click(function(){
+    $('.btn3').parent().next().css("color","red");
+});
+$('.btn4').on({"mouseover focus":function(){
+    $(this).parent().next().css("color","green")
+},"mouseout blur":function(){
+    $(this).parent().next().css("color","blue")
+}});
+
+$('.btn3').off("click"); //이벤트 제거
+$('.btn4').trigger("mouseover"); //강제로 이벤트 발생
+
+// ready. load
+$(document).ready(function(){
+    let imgHeight=$('.img1').height();
+    console.log(imgHeight);
+});
+$(window).load(function(){
+    let imgHeight1=$('.img1').height();
+    console.log(imgHeight1);
+});
+
+// click이벤트
+$('.clickEvt').click(function(){
+    $('.clickEvt').text("진짜눌렀네").css({"background":"red","padding":"20px"});
+});
+$('.clickTest').click(function(){
+    $(this).text("멍 머 이");
+});
+
+//preventDefault() 기본 이벤트 차단
+$('.default1').click(function(e){
+    e.preventDefault();
+    $('.txt1').text("내용이 달라졌습니다!").css("background","red");
+});
+$('.default2').click(function(){
+    $('.txt2').text("내용이 달라졌습니다!").css("background","yellow");
+    return false;
+});
+
+$('.dafault3').on('dblclick', function(){
+    $('.txt3').text("더블클릭!");
+});
+
+// hover
+$('.hoverEvt').hover(function(){
+    $(this).text("마우스 올라왔을때").css("background","green");
+}, function(){
+    $(this).text("마우스 빠져 나왔을때 두번 사용합니다.").css("background","yellow");
+});
+
+//mouseenter / mouseleave
+// $('.mouseEvt').mouseenter(function(){
+//     $(this).text("마우스 포인터가 올라왔을때").css("background","yellow");
+// });
+// $('.mouseEvt').mouseleave(function(){
+//     $(this).text("마우스 포인터가 떠났을때 사용합니다.").css("background","yellow");
+// });
+$('.mouseEvt').on({"mouseenter" :function(){
+    $(this).text("마우스 포인터가 올라왔을때").css("background","yellow");
+}, "mouseleave" :function(){
+    $(this).text("마우스 포인터가 떠났을때 사용합니다.").css("background","yellow");
+}});
+
+$('.mouseoverEvt').on({"mouseover" :function(){
+    $(this).text("마우스 포인터가 올라왔을때").css("background","yellow");
+}, "mouseout" :function(){
+    $(this).text("마우스 포인터가 떠났을때 사용합니다.").css("background","yellow");
+}});
+
+//each
+// $('.animal').each(function(){
+//     let names=$(this).text();
+//     alert(names);
+// });
+let div3 = $('.div3');
+console.log(div3.width());
+console.log(div3.height());
+console.log(div3.css("font-size"));

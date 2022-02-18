@@ -32,3 +32,9 @@ body{background: #ddd;}
 #ball04{left: 220px; top: 200px; background: blue;}
 #ball05{left: 240px; top: 200px; background: greenyellow;}
 #ball06{left: 260px; top: 200px; background: black;}
+
+button{cursor: pointer; background:rgb(37, 219, 153); padding: 20px; color: #fff;}
+a{display: block; border-bottom: 1px solid #ddd;}
+.clickTest{background: pink; padding: 20px; color: #aaa; margin: 5px;}
+
+.div3{width: 200px; height: 100px; font-size: 20px; background: skyblue;}

@@ -1,0 +1,16 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+*{margin: 0; padding: 0;}
+body{font-family: 'Noto Sans KR', sans-serif;}
+
+.all{width: 610px; margin: 50px auto;}
+
+.tabSet{padding: 3px; border: 2px solid lightgreen;}
+.tabSet ul{list-style: none; display: flex; padding: 20px 20px 20px 0;}
+.tabSet ul li{width: 100px; text-align: center; border-bottom: 2px solid #ddd;}
+.tabSet ul li a{ display: block; padding: 10px; text-decoration: none; color: #222;}
+.tabSet ul li a.on{background: rgb(16, 142, 177); color: #fff; padding: 10px;}
+
+.panel{background: #eee; padding: 1em; margin-bottom: .5em;}
+.panels{}

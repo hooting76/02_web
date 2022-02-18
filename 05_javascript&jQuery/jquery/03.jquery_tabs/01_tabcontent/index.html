@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabcontent</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="all">
+        <div class="tabSet">
+            <ul class="tabs">
+                <li><a href="#panel01" class="on" tabindex="1">menu01</a></li>
+                <li><a href="#panel02" tabindex="3">menu02</a></li>
+                <li><a href="#panel03" tabindex="5">menu03</a></li>
+                <li><a href="#panel04" tabindex="7">menu04</a></li>
+                <li><a href="#panel05"tabindex="9">menu05</a></li>
+            </ul>
+            <div class="panels">
+                <!-- tabindex="0"은 해당탭을 건너 뜀. 또한 들어가지못하는 요소에 부여하면 포커스를 줄수있다.-->
+                <div class="panel" id="panel01" tabindex="2">
+                    01. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil asperiores aspernatur tempora voluptas ipsum possimus quibusdam deleniti corrupti sed atque delectus nesciunt, recusandae blanditiis ratione! Nemo laborum veritatis asperiores.
+                </div>
+                <div class="panel" id="panel02" tabindex="4">
+                    02. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil asperiores aspernatur tempora voluptas ipsum possimus quibusdam deleniti corrupti sed atque delectus nesciunt, recusandae blanditiis ratione! Nemo laborum veritatis asperiores.
+                </div>
+                <div class="panel" id="panel03" tabindex="6">
+                    03. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil asperiores aspernatur tempora voluptas ipsum possimus quibusdam deleniti corrupti sed atque delectus nesciunt, recusandae blanditiis ratione! Nemo laborum veritatis asperiores.
+                </div>
+                <div class="panel" id="panel04" tabindex="8">
+                    04. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil asperiores aspernatur tempora voluptas ipsum possimus quibusdam deleniti corrupti sed atque delectus nesciunt, recusandae blanditiis ratione! Nemo laborum veritatis asperiores.
+                </div>
+                <div class="panel" id="panel05" tabindex="10">
+                    05. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil asperiores aspernatur tempora voluptas ipsum possimus quibusdam deleniti corrupti sed atque delectus nesciunt, recusandae blanditiis ratione! Nemo laborum veritatis asperiores.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

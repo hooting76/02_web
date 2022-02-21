@@ -1,0 +1,14 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #222;}
+body{font-size: 1.2em;}
+
+nav{}
+nav>ul{display: flex;}
+nav>ul>li{width: 200px; text-align: center;}
+nav>ul>li>a{display: block; padding: 10px 40px; font-weight: bold; background: #999; color: #fff;}
+
+nav>ul>li>ul{position: absolute; box-shadow: 0 0 2px rgba(0, 0, 0, .1); display: none; width: auto;}
+nav>ul>li>ul>li{}
+nav>ul>li>ul>li>a{display: block; padding: 0 35px 0 40px; background: #FFF;line-height: 30px; }
+.contents{background: magenta; height: 500px;}

@@ -1,0 +1,13 @@
+@charset "utf-8";
+*{padding: 0; margin: 0;}
+
+#wrap{width: 487px; margin: 100px auto;}
+
+#wrap ul{list-style: none; display: flex; justify-content: space-between;}
+#wrap ul li{height: 25px; overflow: hidden;}
+#wrap ul li a.on img{margin-top: -25px;}
+
+#wrap .content{position: relative; width: 487px; height: 323px;}
+#wrap .content div{position: absolute; top: 0; left: 0; width: 455px; height: 291px; margin-top: 10px; padding: 16px; background: #5aa; display: none;}
+#wrap .content div:first-child{display: block;}
+.content div img.on{opacity: .5; cursor: pointer;}

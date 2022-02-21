@@ -1,0 +1,6 @@
+@charset "utf-8";
+*{padding: 0; margin: 0;}
+
+.header{background: #222; border-bottom: 8px solid lightcoral; padding: 40px 0 0 42px;}
+.header ul{list-style: none; display: flex;}
+.header ul li:not(:last-child){margin-right: 10px;}

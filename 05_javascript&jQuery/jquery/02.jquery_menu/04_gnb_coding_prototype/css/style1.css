@@ -1,0 +1,14 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #222;}
+body{font-size: 1.2em;}
+
+nav{width: 100%; position: absolute;background: #abc;}
+nav>ul{display: flex; justify-content: center; height: 40px; overflow: hidden;}
+nav>ul>li{}
+nav>ul>li>a{display: block; padding: 10px 40px; text-transform: uppercase; color: #fff;}
+
+nav>ul.active{height: 200px;}
+nav>ul>li>ul>li{text-align: center;}
+nav>ul>li>ul>li>a{display: block; padding: 0 35px 0 40px; line-height: 38px; transition: all .3s;}
+.contents{background: magenta; height: 500px;}

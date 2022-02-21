@@ -1,0 +1,9 @@
+*{padding: 0; margin: 0;}
+
+#wrap{text-align: center; margin: 200px;}
+#wrap ul{list-style: none;}
+#wrap ul li{float: left; cursor: pointer; margin-right: 10px;}
+#wrap ul li .menu_image{width: 0; overflow: hidden; float: left;}
+#wrap ul li .menu_image a img{width: 97px;}
+#wrap ul li .menu_text{padding-top: 10px; float: left; padding-top: 40px;}
+#wrap ul li .menu_text .on{display: none;}

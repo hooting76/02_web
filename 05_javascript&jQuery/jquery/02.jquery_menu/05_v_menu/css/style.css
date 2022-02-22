@@ -1,0 +1,10 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #fff;}
+#nav{width: 200px; margin: 100px auto;}
+#nav>li{margin-bottom: 3px;}
+#nav>li>.title{height: 35px; line-height: 35px; background-color: #aff; cursor: pointer; padding: 10px;}
+#nav>li>.sub{}
+#nav>li>.sub>li{height: 35px; line-height: 3; background-color: #faf; cursor: pointer; padding: 10px; margin-bottom: 2px;}
+#nav>li>.sub>li:hover{background: #fdf;}
+#nav>li>.sub>li>a{}

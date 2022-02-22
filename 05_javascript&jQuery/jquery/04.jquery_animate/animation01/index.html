@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{width: 100px; height: 100px; border-radius: 50%; background: #ffa; position: absolute; margin: 20px;}
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('button').click(function(){
+                let easing =$('select>option:selected').html();
+
+                $('div').animate({
+                    left:400
+                },2000, easing).animate({left:0},1000, easing);
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <select>
+        <option>linear</option>
+        <option>swing</option>
+        <option>easeInQuad</option>
+        <option>easeOutQuad</option>
+        <option>easeInOutQuad</option>
+        <option>easeInCubic</option>
+        <option>easeOutCubic</option>
+        <option>easeInOutCubic</option>
+        <option>easeInQuart</option>
+        <option>easeOutQuart</option>
+        <option>easeInOutQuart</option>
+        <option>easeInQuint</option>
+        <option>easeOutQuint</option>
+        <option>easeInOutQuint</option>
+        <option>easeInSine</option>
+        <option>easeOutSine</option>
+        <option>easeInOutSine</option>
+        <option>easeInExpo</option>
+        <option>easeOutExpo</option>
+        <option>easeInOutExpo</option>
+        <option>easeInCirc</option>
+        <option>easeOutCirc</option>
+        <option>easeInOutCirc</option>
+        <option>easeInElastic</option>
+        <option>easeOutElastic</option>
+        <option>easeInOutElastic</option>
+        <option>easeInBack</option>
+        <option>easeOutBack</option>
+        <option>easeInOutBack</option>
+        <option>easeInBounce</option>
+        <option>easeOutBounce</option>
+        <option>easeInOutBounce</option>
+    </select>
+       <button>MOVE</button>
+       <div></div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+*{padding: 0; margin: 0;}
+
+.progress_bar{ position: relative; width: 1000px; height: 30px; margin: 3em auto; border: 1px solid lightcoral;}
+.bar{position: absolute; left: 0; bottom: 0; top: 0; width: 0; background: red;}
+.num{position: absolute; top: 0; bottom: 0; right: 15px; font-size: 1.1em; color: black; line-height: 30px;}
+

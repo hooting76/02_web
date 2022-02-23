@@ -10,3 +10,6 @@ ul{list-style: none;}
 
 .leftBtn{position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
 .rightBtn{position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+.pager{position: absolute; bottom: 10px; display: flex; justify-content: center; width: 280px;}
+.pager span{width: 20px; height: 20px; background: rgb(32, 122, 240); z-index: 100; display: block; margin: 0 10px; transition: .3s;}
+.pager span.on{background: rgb(47, 71, 104); width: 40px;}

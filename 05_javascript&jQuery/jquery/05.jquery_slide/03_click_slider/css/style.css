@@ -1,0 +1,15 @@
+*{margin: 0; padding: 0;}
+.container{width: 1150px; height: 250px;margin: 100px auto; position: relative;}
+.container .left{position: absolute; left:0; top: 80px}
+.container .right{position: absolute; right:0; top: 80px}
+
+.container .area{position: relative; width: 1050px; margin-left: 50px; overflow: hidden;}
+
+.container .area ul{list-style: none; display: flex; position: relative; left: 0;}
+.container .area ul li{height: 250px; background: #fff; margin: 0 5px; text-align: center;}
+.container .area ul li a{}
+.container .area ul li a img{display: block; width: 200px; height: 200px;}
+
+.container .area ul li .name{font-size: 11px; padding: 5px 0;}
+.container .area ul li .price{font-size: 14px;}
+

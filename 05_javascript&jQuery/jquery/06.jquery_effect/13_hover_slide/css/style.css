@@ -1,0 +1,9 @@
+*{margin: 0; padding: 0;}
+
+#wrap{width: 1000px; overflow: hidden; height: 500px; margin: 100px auto; border: 1px solid #000;}
+.visual{width: 2000px; position: relative; display: flex;}
+.visual .sc{width: 200px; height: 400px; margin-top: 50px; margin-left: 40px; line-height: 400px; text-align: center; color: #aaa; font-size: 5em;}
+.visual .section1{border: 1px solid #ddd; position: relative;}
+.visual .section2{border: 1px solid #ddd; position: relative;}
+.visual .section3{border: 1px solid #ddd; position: relative;}
+.visual .section4{border: 1px solid #ddd; position: relative;}

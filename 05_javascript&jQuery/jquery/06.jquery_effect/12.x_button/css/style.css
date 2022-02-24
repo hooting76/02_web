@@ -1,0 +1,10 @@
+*{padding: 0; margin: 0;}
+
+.ani_Box{width: 30px; height: 12px; margin: 100px 0 0 100px; cursor: pointer;}
+.line1{width: 30px; height: 2px; background-color: black; transition: .5s; display: block; transform: rotate(0deg); position: relative;}
+.line2{width: 30px; height: 2px; background-color: black; transition: .5s; display: block; transform: rotate(0deg); position: relative; opacity: 1; margin: 3px 0 ;}
+.line3{width: 30px; height: 2px; background-color: black; transition: .5s; display: block; transform: rotate(0deg); position: relative;}
+
+.ani_Box.act .line1{transform: rotate(-45deg); top: 5px;}
+.ani_Box.act .line2{opacity: 0;}
+.ani_Box.act .line3{transform: rotate(45deg); top: -5px;}

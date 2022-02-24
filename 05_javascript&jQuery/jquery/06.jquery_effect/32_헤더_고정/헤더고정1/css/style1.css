@@ -1,0 +1,16 @@
+*{margin: 0; padding: 0;}
+body{background: #faf; line-height: 1.5; min-width: 960px; padding-top: 240px;}
+
+.page-header{background: #fff; height: 70px; width: 100%; min-width: 960px; position: absolute; box-shadow:0 1px 1px #ccc; display: flex; align-items: center;}
+
+.page-header.sticky{position: fixed; top: 0; background: rgba(255, 255, 255, .5);}
+
+.page-header .inner{width: 960px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
+.page-header .inner .logo{}
+.page-header .inner .nav{}
+.page-header .inner .nav ul{display: flex;}
+.page-header .inner .nav ul li{ list-style: none;}
+.page-header .inner .nav ul li a{ display: block; padding: 0 20px; color: #555; text-decoration: none; font-weight: bold;}
+
+.dummy{width: 700px; margin: 0 auto; padding: 6em 0;}
+.dummy p{font-size: 2em; line-height: 200%;}

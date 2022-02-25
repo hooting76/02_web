@@ -1,0 +1,15 @@
+*{padding: 0; margin: 0;}
+html{overflow: hidden;}
+.section-wrap{width: calc(1920px*9);}
+
+.section{width: 100%; max-width: 1920px; line-height: 969px; font-size: 100px; text-transform: uppercase; text-align: center; float: left;}
+
+#section1{background: rgb(231, 124, 42);}
+#section2{background: rgb(112, 100, 14);}
+#section3{background: rgb(23, 155, 165);}
+#section4{background: rgb(21, 124, 42);}
+#section5{background: rgb(31, 155, 00);}
+#section6{background: rgb(231, 88, 88);}
+#section7{background: rgb(1, 153, 142);}
+#section8{background: rgb(231, 124, 153);}
+#section9{background: rgb(231, 134, 240);}

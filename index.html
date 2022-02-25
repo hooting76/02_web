@@ -584,6 +584,72 @@
             <li><a href="https://github.com/hooting76/RWD_ex1/commit/a3a5a4a6ac06384cf2d02e0d05074c3932dda346">반응형 페이지 예제1(망고보드3)</a></li>
             <li>스위퍼 사용 및 배너슬라이더를 제작한 예제이다. 아직 어렵기만하다. 자세한 코드는 위 링크 참조.</li>
         </ul>
+        <hr><br>
+        <h4>22년2월9일 js배열사용예제 + js객체사용법 + 반복문예제 / 클론코딩 작업</h4>
+        <ul> 
+            <li><a href="https://github.com/hooting76/02_web/commit/a1e87b47f70812c010b9678019f5a8a049796e57">-js배열 사용예제-</a></li>
+            <li>기본적인 형태로는 var arr_1 = [1,2,3,4] 형식이다.</li>
+            <li>join: join("")에서 ""안의 문자로 연결하여 하나의 문자열로 반환한다.</li>
+            <li>concat: arr1.concat(arr2) 형태로 사용되며, arr1과 arr2를 하나의 배열로 결합한다.</li>
+            <li>slice: slice(n,m)형태로 사용되며, n부터 m구간의배열만 잘라서 배열객체로 저장한다.</li>
+            <li>sort(): 배열을 오름차순으로 정렬</li>
+            <li>reverse(): 배열을 내림차순으로 정렬</li>
+            <li>splice(n,m, "a","b"): n,m번의 데이터를 지우고 a, b를 입력한다. </li>
+            <li>pop(): 배열 제일 마지막 데이터를 삭제한다.</li>
+            <li>shift(): 배열 제일 처음 데이터를 삭제한다.</li>
+            <li><a href="https://github.com/hooting76/02_web/commit/9c31eef9d4cd1629c395cf918a225def4953483f">-js내에 객체 사용법-</a></li>
+            <li>var tv = new Object() 로 객체선언을 하여서 tv.color="white" 식으로 속성값을 저장할수있다.</li>
+            <li>tv.info = function(){ <br>
+                document.write("tv색상:"+ this.color); <br>
+                document.write("tv가격:"+ this.price);} 방식으로 사용하여 객체호출이 가능하다.
+            </li>
+            <li>new Date()를 사용하여서 날짜,시간 정보를 가져올수있다.</li>
+            <li>var nowMonth = today.getMonth()+1; / js는 달을 0부터 시작함으로 인해 +1를 해줘야 된다. <br>
+                var nowDate = today.getDate(); / 요일정보<br>
+                var nowDay = today.getDay(); / 일 정보<br>
+                var nowYear = today.getFullYear(); / 년도 정보</li>
+            <li>Math(): .max=변수가 가지고있는 최고값<br>
+                .min = 가지고있는 최저값 <br>
+                .round = 소수 첫번째자리에서 반올림 <br>
+                .ceil = 소수 첫째자리에서 올림 <br>
+                .floor = 소수 첫째자리에서 내림 <br>
+                .random = 0과1사이의 난수 발생.
+            </li>
+            <li><a href="https://github.com/hooting76/02_web/commit/3c79a7342a8ab559996bb4cee4438829cde5c8b0">-반복문 예제-</a></li>
+            <li>for기본형: for(조건문){실행문} <br>
+            <li>forEach형: value.forEach(function(item,index){fruits[index]}) <br>
+                for of형: 빈 변수 선언후, let value; for(item of value){item} <br>
+                for in형: 빈 변수 선언후, let value; for(value in obj){obj[value]} <br>
+                do/while형: 빈 변수 선언후, let value; do{obj[value]; value++;} while{value < obj.length} 형태이며, while조건이 될때까지 do 조건문을 실행한다.
+            </li>
+            <li><a href="https://github.com/hooting76/publishingProject/commit/3678d1c6e82307e5a8f912cc1c1ca533d8640d83">클론코딩작업현황</a></li>
+            <li>4번 서브페이지의 카테고리버튼을 완성하였다.</li>
+        </ul>
+        <hr><br>
+        <h4>22년2월10일 js여러활용예제 + 겔러리 예제 + 반응형 예제2 </h4>
+        <ul>
+            <li><a href="https://github.com/hooting76/02_web/commit/3b074b2ef37084d02afb727944d8dde1ea014dbc">여러예제 모음</a></li>
+            <li>문자열을 활용한 다양한 예제들이다. 참고용으로 볼것.</li>
+            <li><a href="https://github.com/hooting76/02_web/commit/1b7da7028461e3328cf9af6d0684665293b3f258">string예제 모음</a></li>
+            <li>.charAt(n): n번째 문자만을 출력 <br>
+            .indexOf("ex"): ex문자가 몇번째부터 나오는지 출력<br>
+            .indexOf("ex",n): n번째 이후로 발견되는 ex가 몇번째인지 출력<br>
+            .lastIndexOf("ex"): 원래방향과 반대방향으로 검색하여 ex가 나온 정순서 번호.<br>
+            .lastIndexOf("ex",n): n번 인덱스부터 오->왼 방향으로 제일먼저 발견된 ex 인덱스값. <br>
+            .match("ex"): 제일먼저 발견되는 ex와 와 일치하는 인덱스 문자 반환 <br>
+            .search("ex"): 제일먼저 발견되는 ex와 와 일치하는 인덱스 값 반환 <br>
+            .substr(n,m): n번 인덱스부터 m자리를 가져옴 <br>
+            .substring(n,m): n~m 인덱스 이전까지의 문자를 반환. <br>
+            .replace("ex", "me"):  제일먼저 발견된 ex를 me 로 변경 <br>
+            .toLowerCase(): 영문소문자로 변환하여 문자반환 <br>
+            .toUpperCase(): 영문 대문자로 변환하여 문자반환 <br>
+            .length(): 문자열의 총 갯수 반환. 
+            </li>
+            <li><a href="https://github.com/hooting76/02_web/commit/094b042829b6a01462d1bba80997c8ef70ca2482">겔러리 예제</a></li>
+            <li>버튼온클릭에 대한 함수를 만들고 겔러리형태를 하는 문서를 작성해 보았다. 코드는 링크 참조</li>
+            <li><a href="https://github.com/hooting76/RWD_ex2/commit/35ece4df093ef537dfc023a9f84ee0b085456387">반응형 예제2-1</a></li>
+            <li>이전과 마찬가지로 모바일웹 환경도 고려하여 css를 구성하는것을 복습하였다.</li>
+        </ul>
     </div> 
     <!-- 하단으로 이동을 위한 테그 -->
     <div id="bottom"></div>

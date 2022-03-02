@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+    <script>
+        $(function(){
+            $.getJSON('http://api.openweathermap.org/data/2.5/forecast?id=1835848&appid=90dda4a9ad533db48bad866d3d27fbea&units=metric', function(data){
+                //alert(data.list[0].main.temp_min)
+
+                let _temp=Math.ceil(data.list[0].main.temp);
+                let _mintemp=Math.ceil(data.list[0].main.temp_min);
+                let _maxtemp=Math.ceil(data.list[0].main.temp_max);
+                let _icon=data.list[0].weather[0].icon;
+                let now = new Date(); 
+                
+                // let textContent = `${moment(now).format(`YYYY-MM-DD HH:mm:ss`)}`;
+                let week = new Array("일","월","화","수","목","금","토");
+                let dayName = week[now.getDay()];
+                let cDate = now.getFullYear() + '/' + (now.getMonth()+1) + '/' + now.getDate() + '/' +dayName + '요일';
+
+                $('.ctemp').append( _temp);
+                $('.clowtemp').append(_mintemp);
+                $('.chighttemp').append(_maxtemp);
+                $('.cicon').append('<img src="http://openweathermap.org/img/wn/'+_icon+'@2x.png">');
+                // $('h2').append(textContent);
+                $('h2').append(cDate);
+
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1>weather api</h1>
+    <h2></h2>
+    <div class="ctemp">현재온도:</div>
+    <div class="clowtemp">최저온도:</div>
+    <div class="chighttemp">최고온도:</div>
+    <div class="cicon">아이콘:</div>
+</body>
+</html>

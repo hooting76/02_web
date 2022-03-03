@@ -12,5 +12,28 @@ $.getJSON('./data/content.json', function(data){
 
 function initGallery(data){
     $allData=data;
-    console.log($allData);
+    // console.log($allData);
+    addItem()
+    $loadMoreBtn.click(function(){
+        addItem();
+    });
 };
+
+function addItem(){
+    let elements=[];
+    let sliceData;
+    sliceData=$allData.slice($added, $added+=$addItemCount);
+    $.each(sliceData, function(idx, item){
+        let itemHTML= 
+        '<li class="gallery-item">'+
+            '<a href="'+item.images.large+'">'+
+                    '<figure>'+
+                        '<img src="'+item.images.thumb+'"alt="'+ item.title+'">'+
+                        '<figcaption>'+item.title+'</figcaption>'+
+                    '</figure>'+
+                '</a>'+
+            '</li>';
+            elements.push($(itemHTML).get(0))
+    });
+    $container.append(elements);
+}

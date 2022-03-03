@@ -8,6 +8,7 @@ let $allData = [];
 // $.getJSON(파일경로, 함수);
 $.getJSON('./data/content.json', function(data){
 });
+initGallery(data);
 function initGallery(data){
     $allData=data;
     console.log($allData);

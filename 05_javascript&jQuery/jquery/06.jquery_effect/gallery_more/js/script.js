@@ -10,6 +10,12 @@ $.getJSON('./data/content.json', function(data){
     initGallery(data);
 });
 
+$container.masonry({
+    // options
+    itemSelector: '.gallery-item',
+    columnWidth: 210
+  });
+
 function initGallery(data){
     $allData=data;
     // console.log($allData);
@@ -36,4 +42,16 @@ function addItem(){
             elements.push($(itemHTML).get(0))
     });
     $container.append(elements);
+    $added +=sliceData.length;
+
+    if($added < $allData.length){
+        $loadMoreBtn.show();
+    }else{
+        $loadMoreBtn.hide();
+    }
+
+    $container.imagesLoaded( function() {
+        $container.masonry('append',elements);
+      });
 }
+

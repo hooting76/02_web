@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Nanum+Gothic:wght@400;700&display=swap');
+
+//icon font
+$color-primary:#285a91;
+$color-secondary:#1f9cfd;
+$color-white:#fff;
+
+$color-blue-1:#a8d8ff;
+$color-blue-2:#c1e1ff;
+$color-blue-3:#d6eaff;
+$color-blue-4:#3d4a56;
+
+$color-gray-light:#b9b9b9;
+$color-gray-dark:#474747;
+
+html{font-size: 62.5%;}
+body{padding: 3em; font-family: 'Nanum Gothic', sans-serif;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+h2{
+    padding: 1rem 0;
+    font-size: 2.4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(left, $color-primary,$color-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .5s;
+    &:hover{
+        padding-left: 1.5rem;
+    }
+}
+h3{
+    padding: .5rem 0;
+    color: $color-gray-dark;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+@mixin clearfix {
+    &:after{
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
+
+// nav
+.nav{
+    &-checkbox{
+        display: none;
+    }
+    &-button{
+        background: #c4e3ff;
+        width: 7rem;
+        height: 6rem;
+        position: fixed;
+        top: 7rem;
+        right: 8rem;
+        z-index: 9999;
+        cursor: pointer;
+        box-shadow: 0 1rem 1rem rgba(#000, 0.1);
+    }
+    &-bg{
+        background-image: radial-gradient($color-primary, $color-secondary);
+        width: 7rem;
+        height: 6rem;
+        position: fixed;
+        top: 7rem;
+        right: 8rem;
+        z-index: 8888;
+        border-radius: 2px;
+        transition: all .8s;
+    }
+    &-checkbox:checked ~&-bg{
+        transform: scale(80);
+    }
+}

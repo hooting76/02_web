@@ -1,0 +1,175 @@
+*{margin: 0; padding: 0;}
+
+body{background: #ddd;}
+#wrap{width: 1000px; margin: 0 auto; padding: 30px; background: #fff; position: relative; overflow: hidden;}
+
+// 1. 변수만들기($로 시작하고, 영문자를 사용 or 영문자+숫자, 소문자로 시작(대문자로 시작x->구분하기때문))
+$white:#fff;
+$gray:#666;
+$blue:rgb(0, 17, 253);
+$red:rgb(255, 0, 0);
+$fs24:24px;
+$fs18:18px;
+$fs12:12px;
+
+.btn1{width: 200px; display: block; height: 50px; line-height: 50px; background: $blue; border: 1px solid $gray; text-align: center; color: $white; 
+    &:hover{background: $red;}
+}
+.btn2{margin-top: 10px; font-size: $fs24; border: none; background: $red; color: $white; padding: 10px 30px; 
+    &:hover{color: $blue;}
+}
+
+// 2. 종속선택자
+.sass{color: $red; 
+    ul{border: 1px solid $blue; padding: 20px; box-sizing: border-box;
+        li{background: pink; margin-bottom: 2px;
+            a{text-decoration: none; 
+                &:hover{color: $red;}
+                &.scss{font-size: $fs12;}
+            }
+            .scss{text-decoration: underline;}
+            &:last-child{border: 5px dotted $blue;}
+        }
+    }
+}
+
+// 3.mixin(==function 과비슷함.)과 include 
+@mixin test {
+    width: 100px;
+    height: 100px;
+    border: 1px solid $blue;
+}
+.test{@include test()}
+
+@mixin clear {
+    &::after{content: ""; display: block; clear: both; }
+}
+.clearfix{
+    @include clear(); background: yellow; 
+    .fl{
+        float: left;
+    }
+}
+
+// 매개변수
+@mixin border($color,$p) {
+    border: 1px solid $color; padding: $p;
+}
+
+.var{@include border(pink,5px); margin-bottom: 5px;}
+.red{@include border(red,10px); margin-bottom: 5px;}
+.green{@include border(green,15px); }
+
+@mixin box($w,$h) {
+    width: $w; height: $h;
+}
+.var2{@include box(50px, 50px); background: yellowgreen; text-align: center; margin-bottom: 5px; padding: $fs24;}
+.var3{@include box(100px, 100px); background: $red; }
+
+
+// 4. 문자보관#{} - 변수를 불러올때 사용, 선택자를 변수로 지정해서 그냥 불러오면 에러발생하기 때문에 사용함.
+$bx:string1;
+div.#{$bx}{border: 1px solid #000;}
+
+@mixin bx1($position, $wid, $color1) {
+    border-#{$position}:$wid solid $color1;
+}
+.string2{@include bx1(bottom, 3px, green); }
+.string3{@include bx1(left,20px , $red); @include bx1(right, 10px, blue);}
+
+// 5.for 반복문
+.list li{background: no-repeat 0 center/20px 20px; line-height: 50px; text-indent: 30px;}
+// .list li.icon1{background-image: url(../img/ico1.png);}
+// .list li.icon2{background-image: url(../img/ico2.png);}
+// .list li.icon3{background-image: url(../img/ico3.png);}
+// .list li.icon4{background-image: url(../img/ico4.png);}
+// .list li.icon5{background-image: url(../img/ico5.png);}
+@for $i from 1 to 6 {
+    .list li.icon#{$i}{background-image: url(../img/ico#{$i}.png);}
+    .list li:nth-child(#{$i})::before{
+        content: "Title#{$i} ";  
+    }
+}
+
+// 6.each 문
+@each $b in book,zoom,new {
+    .ico_#{$b}{
+        background: url(../img/#{$b}.png)no-repeat 0 50%/30px 20px;
+        text-indent: 40px;
+    }
+}
+$heading:(
+    h2:22px, 
+    h3:20px,
+    h4:15px
+);
+
+@each $ele, $fs in $heading {
+    #{$ele}{
+        font-size: $fs;
+    }
+}
+    
+// 7. if(조건문)
+@mixin btn_radius($h,$radius:ture) {
+    height: $h;
+    line-height: $h;
+    text-align: center;
+    background: aqua;
+    color: blue;
+    padding: 5px 20px;
+
+    @if $radius {
+        border-radius: $h/2;
+    }@else{
+        border: 2px solid #ddd;
+    }
+}
+
+.btn{@include btn_radius(30px, false)}
+
+@mixin position($x,$y,$z) {
+    position: absolute;
+    left: $x;
+    top: $y;
+    z-index: $z;
+    @if $x==50% and $y==50% {
+        transform: translate(-50%, -50%);
+    }@else if $x==50%{
+        transform: translateX(-50%);
+    }@else if $y==50%{
+        transform: translateY(-50%);
+    }
+}
+.elseif{position: relative; width: 1000px; height: 500px; background: yellow;
+    .if{
+        width: 300px;
+        height: 300px;
+        background: chocolate;
+        @include position(50%, null, 2);
+    }
+}
+
+// 8.트랜지션 & 애니메이션
+.btns{
+    font-size: 24px;
+    text-decoration: none;
+    opacity: 1;
+    transition: all .5s;
+    &:hover{
+        font-size: 50px;
+        text-decoration: underline;
+        opacity: .4;
+    }
+}
+
+#box1{
+    animation-name: ani;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+@keyframes ani {
+    0%{opacity: .2; transform: translate(100px,20px);}
+    50%{opacity: 1;}
+    100%{opacity: .4; transform: translate(400px,-40px);}
+}

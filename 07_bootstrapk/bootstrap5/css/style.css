@@ -1,0 +1,9 @@
+.navbar{}
+.navbar .navbar-brand{color: #f00;}
+.navbar .navbar-brand .navbar-toggle{}
+.navbar .navbar-brand .navbar-toggle .glyphicon-menu-hamburger{}
+.navbar #navbar{}
+.navbar #navbar .navbar-nav{}
+.navbar #navbar .navbar-nav .active{}
+.navbar #navbar .navbar-nav .active a{color: #333; background: #abc;}
+.navbar #navbar .navbar-nav a{color: #fff; background:#2289;}

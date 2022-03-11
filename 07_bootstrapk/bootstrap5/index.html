@@ -1,46 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- 합쳐지고 최소화된 최신 CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- 부가적인 테마 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
+</head>
 <body>
     <header>
-        <nav class="navbar navbar-light">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
             <div class="container">
-                <div class="navbar-header">
-                    <a href="./" class="navbar-brand">&lt;jch&gt;</a>
-                    <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                        aria-controls="navbar" type="button">
-                        <span class="glyphicon glyphicon-menu-hamburger text-primary"></span>
-                    </button>
-                </div>
-                <div id="navbar" class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Main</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#project">Project</a></li>
-                        <li><a href="#contact">Contact</a></li>
+              <a class="navbar-brand" href="#">&lt;jch&gt;</a>
+              <button class="navbar-toggler p-0 border-0"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                      <li><a class="dropdown-item" href="#">관공서</a></li>
+                      <li><a class="dropdown-item" href="#">반응형</a></li>
+                      <li><a class="dropdown-item" href="#">모바일</a></li>
                     </ul>
-                </div>
-                <!--/.nav-collapse -->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Skill</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
+    <main class="container">
+        <section class="introduction">
+            <div class="vh-100 d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="./media/profile.png" alt="profile" class="rounded-circle">
+                <p class="fs-4 mt-3">hello</p>
+                <p class="fs-24 mb-1 fw-bold">It's me</p>
+                <p class="mp-4">졸려여......zzz</p>
+                <a href="./projects.html">
+                    <button class="btn btn-dark" type="button">프로젝트 바로가기</button>
+                </a>
+            </div>
+        </section>
+        <section class="about">
+            <div class="row">
+                <div class="col-md-6 text-center my-3" >
+                    <img src="./media/profile.png" alt="profile" class="w-75">
+                </div>
+                <div class="col-md-6 mdcenter">
+                    <p class="fs-2 fw-bold">About me </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nesciunt, neque pariatur modi molestiae ipsam autem at magni id voluptatum libero nisi voluptatem quidem, perferendis vel! Deleniti vero ab quasi!</p>
+                    <p>earum nemo qui omnis unde numquam optio sit quisquam minus delectus architecto ea placeat? Distinctio exercitationem delectus error molestias consectetur?</p>
+                    <a href="./projects.html"><button class="btn btn-dark">프로젝트 바로가기</button></a>
+                </div>
+            </div>
+        </section>
+        <section class="Profile">
+            <div class="row">
+                <div class="col-md-6 mdcenter">
+                    <p class="fs-2 fw-bold">About me </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nesciunt, neque pariatur modi molestiae ipsam autem at magni id voluptatum libero nisi voluptatem quidem, perferendis vel! Deleniti vero ab quasi!</p>
+                    <p>earum nemo qui omnis unde numquam optio sit quisquam minus delectus architecto ea placeat? Distinctio exercitationem delectus error molestias consectetur?</p>
+                    <a href="./projects.html"><button class="btn btn-dark">프로파일 바로가기</button></a>
+                </div>
+                <div class="col-md-6 text-center my-3 hoverposition" >
+                    <a href="#"><img src="./media/project-1.png" alt="pro1" class="w-100"></a>
+                    <span class="textspan"></span>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                <p class="fs-2 fw-bold">나 좀 대려가ㅏㅏㅏ</p>
+                <p class="mw-650">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus autem, ipsam sequi officiis dolores voluptate assumenda iure. Perferendis nulla officiis repudiandae quam. Libero voluptatibus debitis, ipsa neque ex iusto numquam.</p>
+                <p>Libero voluptatibus debitis, ipsa neque ex iusto numquam.</p>
+                <ul class="d-flex flex-row list-unstyled">
+                    <li class="px-2">
+                        <a href="#" target="_blank">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="px-2">
+                        <a href="#" target="_blank">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="px-2">
+                        <a href="#" target="_blank">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </li>
+                    <li class="px-2">
+                        <a href="#" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p>email: ggongco1120@gmail.com</p>
+                <p>tel: 010-3696-5184</p>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-light pt-4 pb-2">
+        <div class="container d-flex flex-wrap justify-content-between ">
+            <p class="fs-4 fw-bold pe-4">jch's</p>
+            <ul class="d-flex flex-row list-unstyled align-items-center">
+                <li class="px-2">
+                    <a href="#" target="_blank">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </li>
+                <li class="px-2">
+                    <a href="#" target="_blank">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </li>
+                <li class="px-2">
+                    <a href="#" target="_blank">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </li>
+                <li class="px-2">
+                    <a href="#" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
-
 </html>

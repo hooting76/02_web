@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브라우저 모바일</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/detectmobilebrowser.js"></script>
+    <script>
+        $(function(){
+            // console.log(jQuery.browser.mobile);
+            if(jQuery.browser.mobile==true){
+                $('.pc').hide();
+            }else{
+                $('.mobile').hide();
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>mobile</h1>
+    <div class="mobile">mobile</div>
+    <div class="pc">pc</div>
+</body>
+</html>

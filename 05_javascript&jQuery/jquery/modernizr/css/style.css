@@ -1,0 +1,5 @@
+.demo-image{
+    -webkit-box-reflect: below;
+}
+.no-cssreflections .alt-image { display: block; transform: rotate(180deg); position: relative; top: -4px;}
+.cssreflections .alt-image { display: none; }
